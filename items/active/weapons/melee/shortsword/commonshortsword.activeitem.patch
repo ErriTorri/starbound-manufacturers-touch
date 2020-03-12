@@ -1,0 +1,173 @@
+[
+  {
+    "op": "add",
+    "path": "/builderConfig/0/manufacturer",
+    "value": [
+      "callox",
+      "custom",
+      "rotik",
+      "shadeco",
+      "teklacki"
+    ]
+  },
+  {
+    "op": "remove",
+    "path": "/elementalType"
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/treatPhysicalAsElementalType",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/noElementalTypeUnlessForced",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/elementalType",
+    "value": [
+      "fire",
+      "ice",
+      "electric",
+      "poison",
+      //FU elements
+      "cosmic",
+      "radioactive",
+      "shadow"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/elementalConfig",
+    "value": {
+      "fire": {
+        "primaryAbility": {
+          "damageConfig": {
+            "statusEffects": [
+            ]
+          }
+        },
+        "animationCustom": {
+          "sounds": {
+            "fire": [
+              "/sfx/melee/swing_shortsword_fire1.ogg",
+              "/sfx/melee/swing_shortsword_fire2.ogg",
+              "/sfx/melee/swing_shortsword_fire3.ogg"
+            ],
+            "fire2": [
+              "/sfx/melee/swing_spear_fire1.ogg",
+              "/sfx/melee/swing_spear_fire2.ogg",
+              "/sfx/melee/swing_spear_fire3.ogg"
+            ]
+          }
+        }
+      },
+      "ice": {
+        "primaryAbility": {
+          "damageConfig": {
+            "statusEffects": [
+            ]
+          }
+        },
+        "animationCustom": {
+          "sounds": {
+            "fire": [
+              "/sfx/melee/swing_shortsword_ice1.ogg",
+              "/sfx/melee/swing_shortsword_ice2.ogg",
+              "/sfx/melee/swing_shortsword_ice3.ogg"
+            ],
+            "fire2": [
+              "/sfx/melee/swing_spear_ice1.ogg",
+              "/sfx/melee/swing_spear_ice2.ogg",
+              "/sfx/melee/swing_spear_ice3.ogg"
+            ]
+          }
+        }
+      },
+      "poison": {
+        "primaryAbility": {
+          "damageConfig": {
+            "statusEffects": [
+            ]
+          }
+        },
+        "animationCustom": {
+          "sounds": {
+            "fire": [
+              "/sfx/melee/swing_shortsword_poison1.ogg",
+              "/sfx/melee/swing_shortsword_poison2.ogg",
+              "/sfx/melee/swing_shortsword_poison3.ogg"
+            ],
+            "fire2": [
+              "/sfx/melee/swing_spear_poison1.ogg",
+              "/sfx/melee/swing_spear_poison2.ogg",
+              "/sfx/melee/swing_spear_poison3.ogg"
+            ]
+          }
+        }
+      },
+      "electric": {
+        "primaryAbility": {
+          "damageConfig": {
+            "statusEffects": [
+            ]
+          }
+        },
+        "animationCustom": {
+          "sounds": {
+            "fire": [
+              "/sfx/melee/swing_shortsword_electric1.ogg",
+              "/sfx/melee/swing_shortsword_electric2.ogg",
+              "/sfx/melee/swing_shortsword_electric3.ogg"
+            ],
+            "fire2": [
+              "/sfx/melee/swing_spear_electric1.ogg",
+              "/sfx/melee/swing_spear_electric2.ogg",
+              "/sfx/melee/swing_spear_electric3.ogg"
+            ]
+          }
+        }
+      },
+      "physical": {
+        "primaryAbility": {
+          "damageConfig": {
+            "statusEffects": []
+          }
+        },
+        "animationCustom": {
+          "sounds": {
+            "fire": [
+              "/sfx/melee/swing_shortsword.ogg"
+            ],
+            "fire2": [
+              "/sfx/melee/swing_spear.ogg"
+            ]
+          }
+        }
+      },
+      "cosmic": {
+        "primaryAbility" : { "damageConfig" : { "statusEffects" : [] } },
+		"animationCustom" : { "sounds" : {
+          "fire1" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+          "fire2" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ] }
+		}
+      },
+      "radioactive": {
+        "primaryAbility" : { "damageConfig" : { "statusEffects" : [] } },
+		"animationCustom" : { "sounds" : {
+          "fire1" : [ "/sfx/melee/swing_shortsword_poison1.ogg", "/sfx/melee/swing_shortsword_poison2.ogg", "/sfx/melee/swing_shortsword_poison3.ogg" ],
+          "fire2" : [ "/sfx/melee/swing_spear_poison1.ogg", "/sfx/melee/swing_spear_poison2.ogg", "/sfx/melee/swing_spear_poison3.ogg" ] }
+		}
+      },
+      "shadow": {
+        "primaryAbility" : { "damageConfig" : { "statusEffects" : [] } },
+        "animationCustom" : { "sounds" : {
+          "fire1" : [ "/sfx/melee/swing_shortsword_poison1.ogg", "/sfx/melee/swing_shortsword_poison2.ogg", "/sfx/melee/swing_shortsword_poison3.ogg" ],
+          "fire2" : [ "/sfx/melee/swing_spear_poison1.ogg", "/sfx/melee/swing_spear_poison2.ogg", "/sfx/melee/swing_spear_poison3.ogg" ] }
+		}
+      }
+    }
+  }
+]

@@ -1,0 +1,197 @@
+[
+  [
+    { //check to make sure we're not using FU's style
+      "op" : "test",
+      "path" : "/background/fileHeader",
+      "value" : "/interface/tooltips/headerwide.png",
+      "inverse" : true
+    },
+    {
+      "op": "replace",
+      "path": "/background/fileBody",
+      "value": "/interface/tooltips/kit_expandedswordbody.png"
+    },
+    {
+      "op": "replace",
+      "path": "/background/fileFooter",
+      "value": "/interface/tooltips/kit_expandedswordfooter.png"
+    },
+    {
+      "op": "add",
+      "path": "/manufacturerNameLabel",
+      "value": {
+        "type": "label",
+        "position": [
+          5,
+          86
+        ],
+        "hAnchor": "left",
+        "value": ""
+      }
+    },
+    {
+      "op": "add",
+      "path": "/levelLabel",
+      "value": {
+        "type": "label",
+        "position": [
+          130,
+          142
+        ],
+        "hAnchor": "right",
+        "value": ""
+      }
+    },
+    {
+      "op": "add",
+      "path": "/dpsTitleLabel",
+      "value": {
+        "type": "label",
+        "position": [
+          9,
+          77
+        ],
+        "hAnchor": "left",
+        "value": "DPS:"
+      }
+    },
+    {
+      "op": "add",
+      "path": "/dpsLabel",
+      "value": {
+        "type": "label",
+        "position": [
+          130,
+          77
+        ],
+        "hAnchor": "right",
+        "value": ""
+      }
+    },
+    {
+      "op": "replace",
+      "path": "/altAbilityTitleLabel/position/1",
+      "value": 50
+    },
+    {
+      "op": "replace",
+      "path": "/altAbilityLabel/position/1",
+      "value": 50
+    },
+    {
+      "op": "replace",
+      "path": "/speedTitleLabel/position/1",
+      "value": 59
+    },
+    {
+      "op": "replace",
+      "path": "/speedLabel/position/1",
+      "value": 59
+    },
+    {
+      "op": "replace",
+      "path": "/damagePerShotTitleLabel/position/1",
+      "value": 68
+    },
+    {
+      "op": "replace",
+      "path": "/damagePerShotLabel/position/1",
+      "value": 68
+    },
+    {
+      "op": "replace",
+      "path": "/objectImage/position/1",
+      "value": 119
+    },
+    {
+      "op": "replace",
+      "path": "/handednessLabel/position/1",
+      "value": 142
+    },
+    {
+      "op": "replace",
+      "path": "/damageKindImage/position/1",
+      "value": 104
+    }
+  ],  
+  [
+    { //In this case we are using FU!
+      "op" : "test",
+      "path" : "/background/fileHeader",
+      "value" : "/interface/tooltips/headerwide.png",
+      "inverse" : false
+    },
+    {
+      "op": "add",
+      "path": "/manufacturerNameLabel",
+      "value": {
+        "type": "label",
+        "position": [
+          5,
+          120
+        ],
+        "hAnchor": "left",
+        "value": ""
+      }
+    },
+    {
+      "op": "add",
+      "path": "/dpsTitleLabel",
+      "value": {
+        "type": "label",
+        "position": [
+          9,
+          77
+        ],
+        "hAnchor": "left",
+        "value": "DPS:"
+      }
+    },
+    {
+      "op": "add",
+      "path": "/dpsLabel",
+      "value": {
+        "type": "label",
+        "position": [
+          148,
+          77
+        ],
+        "hAnchor": "right",
+        "value": ""
+      }
+    },
+    {
+      "op": "remove",
+	  "path": "/energyPerShotTitleLabel"
+    },
+    {
+      "op": "remove",
+	  "path": "/energyPerShotLabel"
+    },
+    {
+      "op": "replace",
+      "path": "/altAbilityTitleLabel/position/1",
+      "value": 50
+    },
+    {
+      "op": "replace",
+      "path": "/altAbilityLabel/position/1",
+      "value": 50
+    },
+    {
+      "op": "replace",
+      "path": "/damagePerShotTitleLabel/value",
+      "value": "Damage Per Swing:"
+    },
+    {
+      "op": "replace",
+      "path": "/descriptionLabel/position/1",
+      "value": 118
+    },
+    {
+      "op": "replace",
+      "path": "/levelLabel/position/1",
+      "value": 196
+    }
+  ]
+]

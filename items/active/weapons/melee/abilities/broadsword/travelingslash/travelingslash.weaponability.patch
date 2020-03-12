@@ -1,0 +1,14 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicalTravelSlash",
+    "value": [
+      "/sfx/melee/whip_swing3.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/ability/elementalConfig/physical/projectileType",
+    "value": "kit_projectile_physicaltravelingswoosh"
+  }
+]

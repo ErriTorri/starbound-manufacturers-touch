@@ -1,0 +1,15 @@
+{
+  "name" : "mt_deathbombexplosive",
+  "blockingStat" : "specialStatusImmunity",
+  "effectConfig" : {
+    "minMaxHealth" : 5,
+    "healthDamageFactor" : 1.0,
+    "bombConfig" : "/projectiles/explosions/regularexplosion2/regularexplosionknockback.config",
+    "flashDirectives" : "fade=E5D01D;0.5"
+  },
+  "defaultDuration" : 10,
+
+  "scripts" : [
+    "/stats/effects/deathbomb/deathbomb.lua"
+  ]
+}

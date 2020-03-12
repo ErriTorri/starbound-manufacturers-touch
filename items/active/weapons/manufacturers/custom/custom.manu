@@ -1,0 +1,37 @@
+{
+  "manufacturerName" : "custom",
+  "friendlyName" : "Custom",
+  "priceMultiplier" : 0.95,
+  
+  "prefix" : [
+    "Junk ",
+	"Crafted ",
+	"Jury-Rigged ",
+	"Homebrewed ",
+	"Mama's Own ",
+	"Personal "
+  ],
+  
+  "appearance" : "/items/active/weapons/manufacturers/custom/custom.appearance",
+  
+  //The damage type it defaults to when it generates one that isn't allowed
+  "defaultElementalType" : "physical",
+  "elementalType" : [
+    "physical",
+	"explosive",
+	"fire",
+    "ice",
+    "electric",
+	"poison",
+	//FU elements
+	"cosmic",
+	"radioactive",
+	"shadow"
+  ],
+  
+  "ranged" : {
+  },
+  
+  "melee" : {
+  }
+}

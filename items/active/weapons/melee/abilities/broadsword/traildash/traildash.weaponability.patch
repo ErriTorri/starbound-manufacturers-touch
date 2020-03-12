@@ -1,0 +1,51 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/particleEmitters/physicalSwordCharge",
+    "value": {
+      "active": false,
+      "transformationGroups": [
+        "weapon"
+      ],
+      "emissionRate": 30,
+      "offsetRegion": [
+        -0.75,
+        0,
+        0.75,
+        5.5
+      ],
+      "particles": [
+        {
+          "particle": "kit_particle_physicalswoosh1"
+        },
+        {
+          "particle": "kit_particle_physicalswoosh1"
+        },
+        {
+          "particle": "iceswoosh3"
+        }
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicalTrailDashCharge",
+    "value": [
+      "/sfx/melee/charge_traildash3.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicalTrailDashFire",
+    "value": [
+      "/sfx/melee/whip_swing3.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/ability/elementalConfig/physical",
+    "value": {
+      "projectileType": "kit_projectile_physicaltrail"
+    }
+  }
+]

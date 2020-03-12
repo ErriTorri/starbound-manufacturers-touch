@@ -1,0 +1,16 @@
+[
+  // Graxus
+  { "op": "add", "path": "/labels/mtBoomRifle", "value": "Boom Rifle" },
+
+  // Manaticon
+  { "op": "add", "path": "/labels/mtHeavyBlaster", "value": "Heavy Blaster" },
+  { "op": "add", "path": "/labels/mtLightBlaster", "value": "Light Blaster" },
+  
+  // Shade Co.
+  { "op": "add", "path": "/labels/mtStiletto", "value": "Stiletto" },
+  
+  // Teklacki
+  { "op": "add", "path": "/labels/mtAssaultNeedler", "value": "Assault Needler" },
+  { "op": "add", "path": "/labels/mtMachineNeedler", "value": "Machine Needler" },
+  { "op": "add", "path": "/labels/mtRazor", "value": "Razor" }
+]

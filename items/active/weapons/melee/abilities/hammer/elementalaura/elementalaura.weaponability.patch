@@ -1,0 +1,75 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/particleEmitters/physicalCharge",
+    "value": {
+      "active": false,
+      "transformationGroups": [
+        "weapon"
+      ],
+      "emissionRate": 25,
+      "offsetRegion": [
+        -1,
+        -2.5,
+        1,
+        1.5
+      ],
+      "particles": [
+        {
+          "particle": "kit_particle_physicalswoosh1"
+        },
+        {
+          "particle": "iceswoosh3"
+        },
+        {
+          "particle": "kit_particle_physicalswoosh1"
+        },
+        {
+          "particle": "iceswoosh3"
+        }
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicalcharge",
+    "value": [
+      "/sfx/melee/shockwave_physical_charge.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicalfull",
+    "value": []
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicalactivate",
+    "value": [
+      "/sfx/melee/elemental_aura_activate.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicalactive",
+    "value": [
+      "/sfx/melee/elemental_aura.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicaldeactivate",
+    "value": [
+      "/sfx/gun/impact_plasma.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/ability/elementalConfig/physical",
+    "value": {
+      "damageConfig": {
+        "statusEffects": []
+      }
+    }
+  }
+]

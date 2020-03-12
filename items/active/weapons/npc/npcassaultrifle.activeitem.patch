@@ -1,0 +1,126 @@
+[
+  {
+    "op": "remove",
+    "path": "/elementalType"
+  },
+  {
+    "op": "remove",
+    "path": "/fireSounds"
+  },
+  {
+    "op": "remove",
+    "path": "/primaryAbility/projectileType"
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/manufacturer",
+    "value": [
+      "callox",
+      "custom",
+      "graxus",
+      "manaticon",
+      "necrolix",
+      "rotik",
+      "shadeco",
+      "teklacki",
+      "xiali"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/noElementalTypeUnlessForced",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/treatPhysicalAsElementalType",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/elementalType",
+    "value": [
+      "fire",
+      "ice",
+      "electric",
+      "poison",
+      "explosive"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/elementalConfig",
+    "value": {
+      "fire": {
+        "primaryAbility": {
+          "projectileType": "fireplasma"
+        },
+        "fireSounds": [
+          "/sfx/gun/plasma_ar1.ogg",
+          "/sfx/gun/plasma_ar2.ogg",
+          "/sfx/gun/plasma_ar3.ogg",
+          "/sfx/gun/plasma_pistol3.ogg"
+        ]
+      },
+      "ice": {
+        "primaryAbility": {
+          "projectileType": "iceplasma"
+        },
+        "fireSounds": [
+          "/sfx/gun/plasma_ar1.ogg",
+          "/sfx/gun/plasma_ar2.ogg",
+          "/sfx/gun/plasma_ar3.ogg",
+          "/sfx/gun/plasma_pistol3.ogg"
+        ]
+      },
+      "poison": {
+        "primaryAbility": {
+          "projectileType": "poisonplasma"
+        },
+        "fireSounds": [
+          "/sfx/gun/plasma_ar1.ogg",
+          "/sfx/gun/plasma_ar2.ogg",
+          "/sfx/gun/plasma_ar3.ogg",
+          "/sfx/gun/plasma_pistol3.ogg"
+        ]
+      },
+      "electric": {
+        "primaryAbility": {
+          "projectileType": "electricplasma"
+        },
+        "fireSounds": [
+          "/sfx/gun/plasma_ar1.ogg",
+          "/sfx/gun/plasma_ar2.ogg",
+          "/sfx/gun/plasma_ar3.ogg",
+          "/sfx/gun/plasma_pistol3.ogg"
+        ]
+      },
+      "explosive": {
+        "primaryAbility": {
+          "projectileType": "kit_projectile_explosivebullet"
+        },
+        "fireSounds": [
+          "/sfx/gun/ar1.ogg",
+          "/sfx/gun/ar2.ogg",
+          "/sfx/gun/ar3.ogg",
+          "/sfx/gun/ar4.ogg",
+          "/sfx/gun/ar5.ogg",
+          "/sfx/gun/ar6.ogg"
+        ]
+      },
+      "physical": {
+        "primaryAbility": {
+          "projectileType": "standardbullet"
+        },
+        "fireSounds": [
+          "/sfx/gun/ar1.ogg",
+          "/sfx/gun/ar2.ogg",
+          "/sfx/gun/ar3.ogg",
+          "/sfx/gun/ar4.ogg",
+          "/sfx/gun/ar5.ogg",
+          "/sfx/gun/ar6.ogg"
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "op": "remove",
+    "path": "/elementalType"
+  },
+  {
+    "op": "remove",
+    "path": "/fireSounds"
+  },
+  {
+    "op": "remove",
+    "path": "/primaryAbility/projectileType"
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/manufacturer",
+    "value": [
+      "custom",
+      "manaticon",
+      "necrolix",
+      "rotik",
+      "xiali"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/treatPhysicalAsElementalType",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/noElementalTypeUnlessForced",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/elementalType",
+    "value": [
+      "fire",
+      "ice",
+      "electric",
+      "poison"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/elementalConfig",
+    "value": {
+      "fire": {
+        "primaryAbility": {
+          "projectileType": "fireplasmarocket"
+        },
+        "fireSounds": [
+          "/sfx/gun/rocket_fire1.ogg"
+        ]
+      },
+      "ice": {
+        "primaryAbility": {
+          "projectileType": "iceplasmarocket"
+        },
+        "fireSounds": [
+          "/sfx/gun/rocket_ice1.ogg"
+        ]
+      },
+      "poison": {
+        "primaryAbility": {
+          "projectileType": "poisonplasmarocket"
+        },
+        "fireSounds": [
+          "/sfx/gun/rocket_poison1.ogg"
+        ]
+      },
+      "electric": {
+        "primaryAbility": {
+          "projectileType": "electricplasmarocket"
+        },
+        "fireSounds": [
+          "/sfx/gun/rocket_electric1.ogg"
+        ]
+      },
+      "physical": {
+        "primaryAbility": {
+          "projectileType": "rocketshell"
+        },
+        "fireSounds": [
+          "/sfx/gun/rocket2.ogg"
+        ]
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/elementalFireSounds",
+    "value": {
+      "physical": [
+        "/sfx/gun/rocket2.ogg"
+      ],
+      "fire": [
+        "/sfx/gun/rocket_fire1.ogg"
+      ],
+      "electric": [
+        "/sfx/gun/rocket_electric1.ogg"
+      ],
+      "ice": [
+        "/sfx/gun/rocket_ice1.ogg"
+      ],
+      "poison": [
+        "/sfx/gun/rocket_poison1.ogg"
+      ]
+    }
+  }
+]

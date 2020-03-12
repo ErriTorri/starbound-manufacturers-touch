@@ -1,0 +1,9 @@
+[
+  {
+    "op": "add",
+    "path": "/ability/elementalConfig/physical",
+    "value": {
+      "projectileType": "kit_physicalblinkexplosion"
+    }
+  }
+]

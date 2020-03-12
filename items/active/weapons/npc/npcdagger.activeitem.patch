@@ -1,0 +1,97 @@
+[
+  {
+    "op": "add",
+    "path": "/builderConfig/0/manufacturer",
+    "value": [
+      "callox",
+      "custom",
+      "necrolix",
+      "rotik",
+      "shadeco",
+      "teklacki",
+      "xiali"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/noStatChanges",
+    "value": true
+  },
+  {
+    "op": "remove",
+    "path": "/elementalType"
+  },
+  {
+    "op": "remove",
+    "path": "/fireSounds"
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/treatPhysicalAsElementalType",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/noElementalTypeUnlessForced",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/elementalType",
+    "value": [
+      "fire",
+      "ice",
+      "electric",
+      "poison"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/elementalConfig",
+    "value": {
+      "fire": {
+        "fireSounds": [
+          [
+            "/sfx/melee/swing_dagger_fire1.ogg",
+            "/sfx/melee/swing_dagger_fire2.ogg",
+            "/sfx/melee/swing_dagger_fire3.ogg"
+          ]
+        ]
+      },
+      "ice": {
+        "fireSounds": [
+          [
+            "/sfx/melee/swing_dagger_ice1.ogg",
+            "/sfx/melee/swing_dagger_ice2.ogg",
+            "/sfx/melee/swing_dagger_ice3.ogg"
+          ]
+        ]
+      },
+      "poison": {
+        "fireSounds": [
+          [
+            "/sfx/melee/swing_dagger_poison1.ogg",
+            "/sfx/melee/swing_dagger_poison2.ogg",
+            "/sfx/melee/swing_dagger_poison3.ogg"
+          ]
+        ]
+      },
+      "electric": {
+        "fireSounds": [
+          [
+            "/sfx/melee/swing_dagger_electric1.ogg",
+            "/sfx/melee/swing_dagger_electric2.ogg",
+            "/sfx/melee/swing_dagger_electric3.ogg"
+          ]
+        ]
+      },
+      "physical": {
+        "fireSounds": [
+          [
+            "/sfx/melee/swing_dagger.ogg"
+          ]
+        ]
+      }
+    }
+  }
+]

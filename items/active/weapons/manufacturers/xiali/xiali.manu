@@ -1,0 +1,72 @@
+{
+  "manufacturerName" : "xiali",
+  "friendlyName" : "Xia-Li",
+  "nameColor" : "d1cdf6",
+  "priceMultiplier" : 1.05,
+  
+  "prefix" : [
+    "Slim ",
+	"Sleek ",
+	"Lucid ",
+	"Elegant ",
+	"Superior ",
+	"Radiant "
+  ],
+  
+  "appearance" : "/items/active/weapons/manufacturers/xiali/xiali.appearance",
+  
+  //The damage type it defaults to when it generates one that isn't allowed
+  "defaultElementalType" : "ice",
+  "elementalType" : [
+    "physical",
+    "fire",
+	"ice",
+    "electric",
+	//FU elements
+	"cosmic",
+	"radioactive"
+  ],
+  
+  "ranged" : {
+    "scripts" : [
+	  "/items/active/weapons/components/onEnergyExaustionStatus.lua"
+	],
+	"replaceScripts" : [
+	  {
+	    "script" : "/items/active/weapons/ranged/gun.lua",
+		"replacement" : "/items/active/weapons/components/modifiableGun.lua"
+	  }
+	],
+	
+	"primaryAbility" : {
+      "baseDpsMultiplier" : 0.91,
+	  "energyUsageMultiplier" : 0.6,
+	  "setVariables" : [
+	    {
+	      "variable" : "onEnergyExaustionStatus",
+	      "value" : { "effectName" : "mt_shelfelectrified", "duration" : 3 }
+	    }
+	  ]
+	}
+  },
+  "melee" : {
+    "scripts" : [
+	  "/items/active/weapons/components/whileWieldingStatus.lua"
+	],
+	"replaceScripts" : [
+	  {
+	    "script" : "/items/active/weapons/melee/meleeweapon.lua",
+		"replacement" : "/items/active/weapons/components/modifiableMelee.lua"
+	  }
+	],
+	"primaryAbility" : {
+      "baseDpsMultiplier" : 0.95,
+	  "setVariables" : [
+	    {
+	      "variable" : "whileWieldingStatus",
+	      "value" : "mt_auxiliarpowerplantminor"
+	    }
+	  ]
+	}
+  }
+}

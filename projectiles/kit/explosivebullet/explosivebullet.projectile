@@ -1,0 +1,21 @@
+{
+  "projectileName" : "kit_projectile_explosivebullet",
+  "image" : "explosivebullet.png",
+  "physics" : "laser",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "pointLight" : false,
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/kit/explosions/explosivebullet/explosionknockback.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "power" : 6.0,
+  "speed" : 125,
+  "knockback" : 0
+}

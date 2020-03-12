@@ -1,0 +1,25 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicalActive",
+    "value": [
+      "/sfx/melee/barrier_create_ice.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/ability/elementalConfig/physical",
+    "value": {
+      "projectileType": "electricbarrier"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ability/elementalLightColors/physical",
+    "value": [
+      110,
+      129,
+      140
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "particleEmitters" : {
+    "charge" : {
+      "active" : false,
+      "emissionRate" : 30,
+      "particles" : [
+        { "particle" : "kit_particle_physicalswoosh1"},
+        { "particle" : "kit_particle_physicalswoosh1"}
+      ]
+    }
+  }
+}

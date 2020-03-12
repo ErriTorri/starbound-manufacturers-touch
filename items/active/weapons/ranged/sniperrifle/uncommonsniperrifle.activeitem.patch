@@ -1,0 +1,56 @@
+[
+  {
+    "op": "add",
+    "path": "/builderConfig/0/manufacturer",
+    "value": [
+      "callox",
+      "custom",
+      "graxus",
+      "manaticon",
+      "necrolix",
+      "rotik",
+      "shadeco",
+      "xiali"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/treatPhysicalAsElementalType",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/elementalType/-",
+    "value": "explosive"
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/elementalConfig/explosive",
+    "value": {
+      "primaryAbility": {
+        "projectileType": "kit_projectile_explosivebullet"
+      },
+      "fireSounds": [
+        "/sfx/gun/sniper1.ogg",
+        "/sfx/gun/sniper2.ogg",
+        "/sfx/gun/sniper3.ogg",
+        "/sfx/gun/sniper4.ogg"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/elementalConfig/physical",
+    "value": {
+      "primaryAbility": {
+        "projectileType": "standardbullet"
+      },
+      "fireSounds": [
+        "/sfx/gun/sniper1.ogg",
+        "/sfx/gun/sniper2.ogg",
+        "/sfx/gun/sniper3.ogg",
+        "/sfx/gun/sniper4.ogg"
+      ]
+    }
+  }
+]

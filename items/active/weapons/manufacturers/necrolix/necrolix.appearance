@@ -1,0 +1,7 @@
+{
+  "defaultMeleePalette"  : "/items/active/weapons/manufacturers/necrolix/melee.palettes",
+  "defaultRangedPalette" : "/items/active/weapons/manufacturers/necrolix/ranged.palettes",
+  "useElementalMuzzleFlash" : true,
+  "specific" : {
+  }
+}

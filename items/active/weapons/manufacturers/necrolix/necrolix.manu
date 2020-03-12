@@ -1,0 +1,43 @@
+{
+  "manufacturerName" : "necrolix",
+  "friendlyName" : "Necrolix",
+  "nameColor" : "3a883c",
+  "priceMultiplier" : 1.0,
+  
+  "prefix" : [
+    "Tomb ",
+	"Grave ",
+	"Corpse ",
+	"Ghoul ",
+	"Plague ",
+	"Onyx "
+  ],
+  
+  "appearance" : "/items/active/weapons/manufacturers/necrolix/necrolix.appearance",
+  
+  "defaultElementalType" : "poison",
+  "elementalType" : [
+    "physical",
+	"fire",
+	"ice",
+	"poison",
+	//FU elements
+	"radioactive",
+	"shadow"
+  ],
+  
+  "ranged" : {
+    "primaryAbility" : {
+      "projectileCountMultiplier" : 2.0,
+      "fireTimeMultiplier" : 1.15,
+      "knockbackMultiplier" : 0.4
+	}
+  },
+  
+  "melee" : {
+    "primaryAbility" : {
+      "fireTimeMultiplier" : 1.1,
+	  "knockbackMultiplier" : 1.25
+	}
+  }
+}

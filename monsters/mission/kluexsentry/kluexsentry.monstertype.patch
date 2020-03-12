@@ -1,0 +1,9 @@
+[
+  {
+    "op": "add",
+    "path": "/baseParameters/statusSettings/stats/explosiveResistance",
+    "value": {
+      "baseValue": -0.25
+    }
+  }
+]

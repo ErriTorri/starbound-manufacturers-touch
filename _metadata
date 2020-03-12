@@ -1,0 +1,13 @@
+{
+  "version" : "1.2.14",
+  "tags" : "Weapons|Mechanics",
+  "author" : "Kit",
+  "description" : "Manufacturer's Touch gives randomly generated weapons a bit more character by allowing their creator to play a role on the statistics and appearance of the weapon. In addition, this provides an engine to allow mod makers to create their own manufacturers, as well as make use of resources within, such as explosive bullets.\n\nMake sure to check compatibility to make sure this will work with your other mods!",
+  "requires" : [],
+  "name" : "kit_manufacturer",
+  "friendlyName" : "Manufacturer's Touch",
+  "steamContentId" : "760396113",
+  "priority" : -42,
+  "link" : "steam://url/CommunityFilePage/760396113",
+  "includes" : ["WeaponAssembly", "FrackinUniverse", "Weapon_Reinforcer_For_1_3"]
+}

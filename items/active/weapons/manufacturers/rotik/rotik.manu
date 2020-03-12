@@ -1,0 +1,64 @@
+{
+  "manufacturerName" : "rotik",
+  "friendlyName" : "Rotik",
+  "nameColor" : "60964b",
+  "priceMultiplier" : 1.0,
+
+  "prefix" : [
+    "Scout ",
+    "Quick ",
+    "Rapid ",
+    "Desert ",
+    "Tactical ",
+    "Operational "
+  ],
+  
+  "appearance" : "/items/active/weapons/manufacturers/rotik/rotik.appearance",
+
+  "defaultElementalType" : "physical",
+  "elementalType" : [
+    "physical",
+    "fire",
+    "ice",
+    "electric",
+    "poison"
+  ],
+
+  "ranged" : {	
+    "replaceScripts" : [
+     {  "script" : "/items/active/weapons/ranged/gun.lua", "replacement" : "/items/active/weapons/components/modifiableGun.lua" }
+    ],
+    "scripts" : [ "/items/active/weapons/components/scaleValueOverTime.lua" ],
+	
+	"modifyVariables" : [
+	  {
+	    "variable" :  "primaryAbility.fireType",
+		"operation" : "set",
+		"value" :     "auto"
+	  }
+	],
+	
+    "primaryAbility" : {
+      "baseDpsMultiplier" : 0.90,
+      "fireTimeMultiplier" : { "evalFunction" : "rotikFireTimeMultiplier" },
+      "projectileCountMultiplier" : 0.66,
+      "setVariables" : [
+        {
+		  "variable" : "scaleValueOverTime",
+		  "value" : {
+		    "values" : [
+			  { "variable" : "fireTime", "minimumMultiplier" : 0.25, "attacksToReachMultiplier" : 8 }, //value, then the minimum (or maximum) that it scale to as a multiplier * itself, then how many attacks to reach that
+			  { "variable" : "baseDps",  "minimumMultiplier" : 1.225, "attacksToReachMultiplier" : 8 }
+			]
+		  }
+		}
+      ]
+    }
+  },
+  
+  "melee" : {
+    "primaryAbility" : {
+	  "knockbackMultiplier" : 1.1
+	}
+  }
+}

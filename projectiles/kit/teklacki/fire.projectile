@@ -1,0 +1,23 @@
+{
+  "projectileName" : "kit_projectile_teklackifire",
+  "physics" : "arrownosticky",
+  "image" : "fire.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKind" : "firedagger",
+  "pointLight" : false,
+  "flippable" : true,
+  "timeToLive" : 8,
+  "emitters" : [ "fireplasma" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "lightColor" : [115, 119, 38],
+  "power" : 50.0,
+  "speed" : 75,
+  "knockback" : 0
+}

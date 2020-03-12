@@ -1,0 +1,54 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicalSpin",
+    "value": [
+      "/sfx/melee/elemental_spin_ice.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicalSpinFire",
+    "value": [
+      "/sfx/melee/whip_swing2.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/particleEmitters/physicalSpin",
+    "value": {
+      "active": false,
+      "emissionRate": 12,
+      "offsetRegion": [
+        -3.5,
+        -3.5,
+        3.5,
+        3.5
+      ],
+      "particles": [
+        {
+          "particle": "kit_particle_physicalswoosh1"
+        },
+        {
+          "particle": "iceswoosh3"
+        },
+        {
+          "particle": "kit_particle_physicalswoosh1"
+        },
+        {
+          "particle": "iceswoosh3"
+        }
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ability/elementalConfig/physical",
+    "value": {
+      "projectileType": "kit_projectile_physicalspinswoosh",
+      "damageConfig": {
+        "statusEffects": []
+      }
+    }
+  }
+]

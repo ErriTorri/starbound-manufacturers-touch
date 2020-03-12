@@ -1,0 +1,32 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicalStart",
+    "value": [
+      "/sfx/melee/swing_spear_fire1.ogg",
+      "/sfx/melee/swing_spear_fire2.ogg",
+      "/sfx/melee/swing_spear_fire3.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicalBlast",
+    "value": [
+      "/sfx/melee/rocketspear_loop_fire.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicalEnd",
+    "value": [
+      "/sfx/melee/rocketspear_stop_fire.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/ability/elementalConfig/physical",
+    "value": {
+      "projectileType": "flamethrower"
+    }
+  }
+]

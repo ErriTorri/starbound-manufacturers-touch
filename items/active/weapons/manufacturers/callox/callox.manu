@@ -1,0 +1,55 @@
+{
+  "manufacturerName" : "callox",
+  "friendlyName" : "Callox",
+  "nameColor" : "b9c0ec",
+  "priceMultiplier" : 1.0,
+
+  "prefix" : [
+    [ "Sturdy ", "Rugged " ],
+    "Resistant ",
+    "Arctic ",
+    "Enduring ",
+    "Survival ",
+    "Inevitable "
+  ],
+  
+  "appearance" : "/items/active/weapons/manufacturers/callox/callox.appearance",
+
+  //The damage type it defaults to when it generates one that isn't allowed
+  "defaultElementalType" : "physical",
+  "elementalType" : [
+    "physical",
+    "ice"
+  ],
+
+  "ranged" : {
+    "scripts" : [ "/items/active/weapons/components/gunRecoil.lua" ],
+    "replaceScripts" : [
+     {
+        "script" : "/items/active/weapons/ranged/gun.lua",
+        "replacement" : "/items/active/weapons/components/modifiableGun.lua"
+      }
+    ],
+	
+	"primaryAbility" : {
+      "baseDpsMultiplier" : 1.15,
+	  "critChance" : 50.0,
+	  "fireTimeMultiplier" : {
+        "evalFunction" : "calloxFireTimeMultiplier",
+        "variable" : "fireTime"
+      },
+      "setVariables" : [
+        {
+          "variable" : "recoil",
+          "value" : { "speed" : 200.0, "force" : 1500.0 }
+        }
+      ]
+	}
+  },
+  "melee" : {
+	"primaryAbility" : {
+      "baseDpsMultiplier" : 1.1,
+      "fireTimeMultiplier" : 1.25
+	}
+  }
+}

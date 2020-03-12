@@ -1,0 +1,14 @@
+{
+  "projectileName" : "kit_physicalblinkexplosion",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "damageKindImage" : "icon.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/regularexplosionknockback.config"
+    }
+  ],
+  "damageKind" : "NoDamage",
+  "onlyHitTerrain" : true,
+  "timeToLive" : 0
+}

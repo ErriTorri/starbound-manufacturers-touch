@@ -1,0 +1,36 @@
+[
+  {
+    "op": "add",
+    "path": "/builderConfig/0/manufacturer",
+    "value": [
+	  "callox",
+      "custom",
+      "necrolix",
+      "rotik",
+      "shadeco",
+      "teklacki",
+      "xiali"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/treatPhysicalAsElementalType",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/elementalConfig/physical",
+    "value": {
+      "primaryAbility": {
+        "damageConfig": {
+          "statusEffects": []
+        }
+      },
+      "fireSounds": [
+        [
+          "/sfx/melee/swing_dagger.ogg"
+        ]
+      ]
+    }
+  }
+]

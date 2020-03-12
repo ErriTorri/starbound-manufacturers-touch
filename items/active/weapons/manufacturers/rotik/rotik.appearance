@@ -1,0 +1,7 @@
+{
+  "defaultMeleePalette"  : "/items/active/weapons/manufacturers/rotik/melee.palettes",
+  "defaultRangedPalette" : "/items/active/weapons/manufacturers/rotik/ranged.palettes",
+  "useElementalMuzzleFlash" : true,
+  "specific" : {
+  }
+}

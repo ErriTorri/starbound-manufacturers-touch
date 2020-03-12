@@ -1,0 +1,16 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/explosiveGuided",
+    "value": [
+      "/sfx/gun/rocket2.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/ability/elementalConfig/explosive",
+    "value": {
+      "projectileType": "guidedrocket"
+    }
+  }
+]

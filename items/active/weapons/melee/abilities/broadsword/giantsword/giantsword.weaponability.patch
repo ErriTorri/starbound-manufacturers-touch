@@ -1,0 +1,57 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/particleEmitters/physicalSwordCharge",
+    "value": {
+      "active": false,
+      "transformationGroups": [
+        "weapon"
+      ],
+      "emissionRate": 30,
+      "offsetRegion": [
+        -0.75,
+        0,
+        0.75,
+        5.5
+      ],
+      "particles": [
+        {
+          "particle": "kit_particle_physicalswoosh1"
+        },
+        {
+          "particle": "iceswoosh3"
+        }
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicalcharge",
+    "value": [
+      "/sfx/melee/giantsword_charge_electric.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicalfullwindup",
+    "value": [
+      "/sfx/melee/giantsword_charge_full.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicalfull",
+    "value": [
+      "/sfx/melee/elemental_aura.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/ability/elementalConfig/physical",
+    "value": {
+      "damageConfig": {
+        "statusEffects": []
+      }
+    }
+  }
+]

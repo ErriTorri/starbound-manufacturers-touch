@@ -1,0 +1,9 @@
+[
+  {
+    "op": "add",
+    "path": "/ability/elementalConfig/explosive",
+    "value": {
+      "projectileType": "kit_projectile_deathbombdartexplosive"
+    }
+  }
+]

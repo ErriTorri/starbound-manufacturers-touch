@@ -1,0 +1,211 @@
+[
+  {
+    "op": "replace",
+    "path": "/background/fileBody",
+    "value": "/interface/tooltips/kit_expandedgunbody.png"
+  },
+  {
+    "op": "replace",
+    "path": "/background/fileFooter",
+    "value": "/interface/tooltips/kit_expandedgunfooter.png"
+  },
+  {
+    "op": "add",
+    "path": "/manufacturerNameLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        5,
+        111
+      ],
+      "hAnchor": "left",
+      "value": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/levelLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        130,
+        166
+      ],
+      "hAnchor": "right",
+      "value": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/dpsTitleLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        9,
+        102
+      ],
+      "hAnchor": "left",
+      "value": "DPS:"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/dpsLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        130,
+        102
+      ],
+      "hAnchor": "right",
+      "value": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/energyPerSecondTitleLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        9,
+        93
+      ],
+      "hAnchor": "left",
+      "value": "EPS:"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/energyPerSecondLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        130,
+        93
+      ],
+      "hAnchor": "right",
+      "value": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/damagePerEnergyTitleLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        9,
+        84
+      ],
+      "hAnchor": "left",
+      "value": "Damage Per Energy:"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/damagePerEnergyLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        130,
+        84
+      ],
+      "hAnchor": "right",
+      "value": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/critChanceTitleLabel",
+    "value": {
+      "type": "label",
+      "position": [ 9, 157 ],
+      "hAnchor": "left",
+      "value": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/critChanceLabel",
+    "value": {
+      "type": "label",
+      "position": [ 22, 147 ],
+      "hAnchor": "right",
+      "value": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/critBonusTitleLabel",
+    "value": {
+      "type": "label",
+      "position": [ 9, 137 ],
+      "hAnchor": "left",
+      "value": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/critBonusLabel",
+    "value": {
+      "type": "label",
+      "position": [ 22, 127 ],
+      "hAnchor": "right",
+      "value": ""
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/altAbilityTitleLabel/position/1",
+    "value": 48
+  },
+  {
+    "op": "replace",
+    "path": "/altAbilityLabel/position/1",
+    "value": 48
+  },
+  {
+    "op": "replace",
+    "path": "/speedTitleLabel/position/1",
+    "value": 66
+  },
+  {
+    "op": "replace",
+    "path": "/speedLabel/position/1",
+    "value": 66
+  },
+  {
+    "op": "replace",
+    "path": "/damagePerShotTitleLabel/position/1",
+    "value": 75
+  },
+  {
+    "op": "replace",
+    "path": "/damagePerShotLabel/position/1",
+    "value": 75
+  },
+  {
+    "op": "replace",
+    "path": "/energyPerShotTitleLabel/position/1",
+    "value": 57
+  },
+  {
+    "op": "replace",
+    "path": "/energyPerShotLabel/position/1",
+    "value": 57
+  },
+  {
+    "op": "replace",
+    "path": "/handednessLabel/position/1",
+    "value": 166
+  },
+  {
+    "op": "replace",
+    "path": "/damageKindImage/position/1",
+    "value": 129
+  },
+  {
+    "op": "replace",
+    "path": "/objectImage/position/1",
+    "value": 146
+  }
+]

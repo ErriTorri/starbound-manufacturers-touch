@@ -1,0 +1,16 @@
+[
+  {
+    "op" : "add",
+    "path" : "/explosive",
+    "value" : {
+      "resistanceStat": "explosiveResistance",
+	  "damageNumberParticles": {
+        "hit": "kit_explosivedamagenumber",
+        "stronghit": "kit_explosivedamagenumberstrong",
+        "weakhit": "kit_explosivedamagenumberweak",
+        "shieldhit": "kit_explosivedamagenumber",
+        "kill": "kit_explosivedamagenumber"
+      }
+    }
+  }
+]

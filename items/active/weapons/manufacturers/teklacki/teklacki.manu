@@ -1,0 +1,60 @@
+{
+  "manufacturerName" : "teklacki",
+  "friendlyName" : "Teklacki",
+  "nameColor" : "d25736",
+  "priceMultiplier" : 1.0,
+  
+  "appearance" : "/items/active/weapons/manufacturers/teklacki/teklacki.appearance",
+  
+  "prefix" : [
+    "Jagged ",
+	"Angry ",
+	"Frenzied ",
+	"Serrated ",
+	"Ritual ",
+	"Fervorous "
+  ],
+  
+  //The damage type it defaults to when it generates one that isn't allowed
+  "defaultElementalType" : "fire",
+  "elementalType" : [
+    "physical",
+    "fire",
+    "ice",
+	"poison"
+  ],
+  
+  "ranged" : {
+	"modifyVariables" : [
+	  {
+	    //Teklacki ranged weapons are always auto, never burst
+	    "variable" :  "primaryAbility.fireType",
+		"operation" : "set",
+		"value" :     "auto"
+	  }
+	],
+  
+    "primaryAbility" : {
+	  "fireTimeMultiplier" : 2.5,
+      "baseDpsMultiplier" : 1.08,
+	  "knockbackMultiplier" : 1.5,
+	  
+	  "projectileReplacements" : [
+	    //instead of bullets or plasma, Teklacki weapons use darts
+	    { "projectile" : "standardbullet", "replacement" : "kit_projectile_teklackiphysical"},
+	    { "projectile" : "electricplasma", "replacement" : "kit_projectile_teklackielectric"},
+	    { "projectile" : "fireplasma",     "replacement" : "kit_projectile_teklackifire"},
+	    { "projectile" : "iceplasma",      "replacement" : "kit_projectile_teklackiice"},
+	    { "projectile" : "poisonplasma",   "replacement" : "kit_projectile_teklackipoison"}
+	  ]
+	}
+  },
+
+  "melee" : {
+    "primaryAbility" : {
+      "fireTimeMultiplier" : 0.75,
+      "baseDpsMultiplier" : 1.05,
+	  "knockbackMultiplier" : 0.2
+	}
+  }
+}

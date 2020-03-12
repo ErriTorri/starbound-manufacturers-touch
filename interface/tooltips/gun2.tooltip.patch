@@ -1,0 +1,220 @@
+[
+  {
+    "op": "replace",
+    "path": "/background/fileBody",
+    "value": "/interface/tooltips/kit_widebody.png"
+  },
+  {
+    "op": "replace",
+    "path": "/background/fileFooter",
+    "value": "/interface/tooltips/kit_widefooter.png"
+  },
+  {
+    "op": "replace",
+    "path": "/background/fileHeader",
+    "value": "/interface/tooltips/kit_wideheader.png"
+  },
+  {
+    "op": "add",
+    "path": "/manufacturerNameLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        5,
+        141
+      ],
+      "hAnchor": "left",
+      "value": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/dpsTitleLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        9,
+        93
+      ],
+      "hAnchor": "left",
+      "value": "DPS:"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/dpsLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        148,
+        93
+      ],
+      "hAnchor": "right",
+      "value": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/energyPerSecondTitleLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        9,
+        84
+      ],
+      "hAnchor": "left",
+      "value": "EPS:"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/energyPerSecondLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        148,
+        84
+      ],
+      "hAnchor": "right",
+      "value": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/damagePerEnergyTitleLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        9,
+        75
+      ],
+      "hAnchor": "left",
+      "value": "Damage Per Energy:"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/damagePerEnergyLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        148,
+        75
+      ],
+      "hAnchor": "right",
+      "value": ""
+    }
+  },
+  
+  {
+	"op": "replace",
+	"path": "/descriptionLabel/position/1",
+	"value": 140
+  },
+  {
+	"op": "replace",
+	"path": "/critChanceTitleLabel/position/1",
+	"value": 181
+  },
+  {
+	"op": "replace",
+	"path": "/critChanceLabel/position/1",
+	"value": 171
+  },
+  {
+	"op": "replace",
+	"path": "/critBonusTitleLabel/position/1",
+	"value": 161
+  },
+  {
+	"op": "replace",
+	"path": "/critBonusLabel/position/1",
+	"value": 151
+  },
+  {
+	"op": "replace",
+	"path": "/levelLabel/position/1",
+	"value": 197
+  },
+  {
+	"op": "replace",
+	"path": "/handednessLabel/position/1",
+	"value": 197
+  },
+  {
+	"op": "replace",
+	"path": "/damageKindImage/position/1",
+	"value": 149
+  },
+  {
+	"op": "replace",
+	"path": "/objectImage/position/1",
+	"value": 164
+  },
+  
+  {
+	"op": "replace",
+	"path": "/critChanceTitleLabel/position/1",
+	"value": 182
+  },
+  {
+	"op": "replace",
+	"path": "/critChanceLabel/position/1",
+	"value": 172
+  },
+  {
+	"op": "replace",
+	"path": "/critBonusTitleLabel/position/1",
+	"value": 162
+  },
+  {
+	"op": "replace",
+	"path": "/critBonusLabel/position/1",
+	"value": 152
+  },
+  {
+    "op": "replace",
+    "path": "/levelLabel/position/1",
+    "value": 196
+  },
+  {
+    "op": "replace",
+    "path": "/altAbilityTitleLabel/position/1",
+    "value": 39
+  },
+  {
+    "op": "replace",
+    "path": "/altAbilityLabel/position/1",
+    "value": 39
+  },
+  {
+    "op": "replace",
+    "path": "/energyPerShotTitleLabel/position/1",
+    "value": 48
+  },
+  {
+    "op": "replace",
+    "path": "/energyPerShotLabel/position/1",
+    "value": 48
+  },
+  {
+    "op": "replace",
+    "path": "/speedTitleLabel/position/1",
+    "value": 57
+  },
+  {
+    "op": "replace",
+    "path": "/speedLabel/position/1",
+    "value": 57
+  },
+  {
+    "op": "replace",
+    "path": "/damagePerShotTitleLabel/position/1",
+    "value": 66
+  },
+  {
+    "op": "replace",
+    "path": "/damagePerShotLabel/position/1",
+    "value": 66
+  }
+]

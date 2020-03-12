@@ -1,0 +1,23 @@
+{
+  "projectileName" : "kit_projectile_teklackielectric",
+  "physics" : "arrownosticky",
+  "image" : "electric.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKind" : "electricdagger",
+  "pointLight" : false,
+  "flippable" : true,
+  "timeToLive" : 8,
+  "emitters" : [ "electricplasma" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "lightColor" : [102, 32, 110],
+  "power" : 50.0,
+  "speed" : 90,
+  "knockback" : 0
+}

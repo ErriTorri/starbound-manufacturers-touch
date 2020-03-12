@@ -1,0 +1,29 @@
+{
+  "kind" : "kit_effect_largephysicalswoosh",
+  "definition" : {
+    "duration" : 0.01,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ "kit_particle_physicalswoosh1", "largeiceswoosh3", "largeiceswoosh2", "kit_particle_physicalswoosh1", "largeiceswoosh3", "largeiceswoosh2", "kit_particle_physicalswoosh1", "largeiceswoosh3", "largeiceswoosh2" ]
+      ],
+      "sounds" : [
+        [ ]
+      ]
+    },
+    "particles" : [
+      [ "kit_particle_physicalswoosh1", "largeiceswoosh3", "largeiceswoosh2" ]
+    ],
+    "sounds" : [
+      [ ]
+    ],
+    "stop" : {
+      "particles" : [
+        [ "largeiceswoosh4", "largeiceswoosh4", "largeiceswoosh4", "largeiceswoosh4", "largeiceswoosh4", "largeiceswoosh4" ]
+      ],
+      "sounds" : [
+        [ ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "projectileName" : "kit_projectile_teklackiphysical",
+  "physics" : "arrownosticky",
+  "image" : "physical.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKind" : "standardbullet",
+  "pointLight" : false,
+  "flippable" : true,
+  "timeToLive" : 8,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "power" : 50.0,
+  "speed" : 80,
+  "knockback" : 0
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "op": "add",
+    "path": "/builderConfig/0/manufacturer",
+    "value": [
+      "callox",
+      "custom",
+      "rotik",
+      "shadeco",
+      "teklacki"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/treatPhysicalAsElementalType",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/elementalConfig/physical",
+    "value": {
+      "primaryAbility": {
+        "damageConfig": {
+          "statusEffects": []
+        }
+      },
+      "animationCustom": {
+        "sounds": {
+          "fire": [
+            "/sfx/melee/swing_shortsword.ogg"
+          ],
+          "fire2": [
+            "/sfx/melee/swing_spear.ogg"
+          ]
+        }
+      }
+    }
+  }
+]

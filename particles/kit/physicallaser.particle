@@ -1,0 +1,19 @@
+{
+  "kind" : "kit_particlephysicallaser",
+  "definition" : {
+    "type" : "ember",
+    "size" : 1.0,
+    "color" : [217, 58, 58, 255],
+    "fade" : 0.9,
+    "light" : [191, 2, 2],
+    "initialVelocity" : [-2, -3.0],
+    "finalVelocity" : [-2, -3.0],
+    "approach" : [0, 20],
+    "timeToLive" : 0.8,
+    "layer" : "middle",
+    "variance" : {
+      "initialVelocity" : [2, 3.0],
+      "size" : 0.5
+    }
+  }
+}

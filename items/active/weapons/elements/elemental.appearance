@@ -1,0 +1,31 @@
+{
+  // As of now, this file does nothing. If you've found this, then you've found a WIP feature for a future update
+
+  // this file defines the palettes for different energy types on weapon parts
+  // this will not affect elemental effects, only what the glowing light-colors
+  
+  // if a weapon uses this, replace their animations with one that supports full bright energy parts
+  "replacementAnimations" : {
+    //only supports guns right now. If no proper replacement is found, then this won't use a fullbright layer
+    {
+      "animation"   : "/items/active/weapons/ranged/gun.animation",
+      "replacement" : "/items/active/weapons/elements/gun.animation"
+    }
+  },
+  "elementalPalettes" : {
+    // these keys aren't predefined. If you want to add support for a new element, then just add an "<ELEMENT_NAME>Palettes" key to this table
+    "defaultPalettes" : "/items/active/weapons/elements/palettes/default.palettes",
+  
+    "electricPalettes" : "/items/active/weapons/elements/palettes/electric.palettes",
+    "firePalettes" : "/items/active/weapons/elements/palettes/fire.palettes",
+    "icePalettes" : "/items/active/weapons/elements/palettes/ice.palettes",
+    "poisonPalettes" : "/items/active/weapons/elements/palettes/poison.palettes",
+    
+    "explosivePalettes" : "/items/active/weapons/elements/palettes/explosive.palettes",
+    
+    // FU support
+    "cosmicPalettes" : "/items/active/weapons/elements/palettes/cosmic.palettes",
+    "radioactivePalettes" : "/items/active/weapons/elements/palettes/radioactive.palettes",
+    "shadowPalettes" : "/items/active/weapons/elements/palettes/shadow.palettes"
+  }
+}

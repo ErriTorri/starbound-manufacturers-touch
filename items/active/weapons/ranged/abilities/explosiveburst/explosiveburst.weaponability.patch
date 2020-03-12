@@ -1,0 +1,16 @@
+[
+  {
+    "op": "add",
+    "path": "/ability/elementalConfig/explosive",
+    "value": {
+      "projectileType": "kit_projectile_airburstexplosivebullet"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ability/elementalConfig/physical",
+    "value": {
+      "projectileType": "airburstbullet"
+    }
+  }
+]

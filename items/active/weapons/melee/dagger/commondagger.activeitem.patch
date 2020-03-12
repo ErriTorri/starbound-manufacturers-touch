@@ -1,0 +1,137 @@
+[
+  {
+    "op": "add",
+    "path": "/builderConfig/0/manufacturer",
+    "value": [
+      "callox",
+      "custom",
+      "necrolix",
+      "rotik",
+      "shadeco",
+      "teklacki",
+      "xiali"
+    ]
+  },
+  {
+    "op": "remove",
+    "path": "/elementalType"
+  },
+  {
+    "op": "remove",
+    "path": "/fireSounds"
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/treatPhysicalAsElementalType",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/noElementalTypeUnlessForced",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/elementalType",
+    "value": [
+      "fire",
+      "ice",
+      "electric",
+      "poison",
+      //FU elements
+      "cosmic",
+      "radioactive",
+      "shadow"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/elementalConfig",
+    "value": {
+      "fire": {
+        "primaryAbility": {
+          "damageConfig": {
+            "statusEffects": [
+            ]
+          }
+        },
+        "fireSounds": [
+          [
+            "/sfx/melee/swing_dagger_fire1.ogg",
+            "/sfx/melee/swing_dagger_fire2.ogg",
+            "/sfx/melee/swing_dagger_fire3.ogg"
+          ]
+        ]
+      },
+      "ice": {
+        "primaryAbility": {
+          "damageConfig": {
+            "statusEffects": [
+            ]
+          }
+        },
+        "fireSounds": [
+          [
+            "/sfx/melee/swing_dagger_ice1.ogg",
+            "/sfx/melee/swing_dagger_ice2.ogg",
+            "/sfx/melee/swing_dagger_ice3.ogg"
+          ]
+        ]
+      },
+      "poison": {
+        "primaryAbility": {
+          "damageConfig": {
+            "statusEffects": [
+            ]
+          }
+        },
+        "fireSounds": [
+          [
+            "/sfx/melee/swing_dagger_poison1.ogg",
+            "/sfx/melee/swing_dagger_poison2.ogg",
+            "/sfx/melee/swing_dagger_poison3.ogg"
+          ]
+        ]
+      },
+      "electric": {
+        "primaryAbility": {
+          "damageConfig": {
+            "statusEffects": [
+            ]
+          }
+        },
+        "fireSounds": [
+          [
+            "/sfx/melee/swing_dagger_electric1.ogg",
+            "/sfx/melee/swing_dagger_electric2.ogg",
+            "/sfx/melee/swing_dagger_electric3.ogg"
+          ]
+        ]
+      },
+      "physical": {
+        "primaryAbility": {
+          "damageConfig": {
+            "statusEffects": []
+          }
+        },
+        "fireSounds": [
+          [
+            "/sfx/melee/swing_dagger.ogg"
+          ]
+        ]
+      },
+      "cosmic": {
+        "primaryAbility" : { "damageConfig" : { "statusEffects" : [] } },
+        "fireSounds" : [ [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ] ]
+      },
+      "radioactive": {
+        "primaryAbility" : { "damageConfig" : { "statusEffects" : [] } },
+        "fireSounds" : [ [ "/sfx/melee/swing_dagger_poison1.ogg", "/sfx/melee/swing_dagger_poison2.ogg", "/sfx/melee/swing_dagger_poison3.ogg" ] ]
+      },
+      "shadow": {
+        "primaryAbility" : { "damageConfig" : { "statusEffects" : [] } },
+        "fireSounds" : [ [ "/sfx/melee/swing_dagger_poison1.ogg", "/sfx/melee/swing_dagger_poison2.ogg", "/sfx/melee/swing_dagger_poison3.ogg" ] ]
+      }
+    }
+  }
+]

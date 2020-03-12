@@ -1,0 +1,69 @@
+[
+  { "op": "add", "path": "/manufacturerNameLabel", "value": {
+    "type": "label",
+    "position": [
+    5,
+    120
+    ],
+    "hAnchor": "left",
+    "value": ""
+  }
+  },
+  { "op": "add", "path": "/dpsTitleLabel",
+    "value": {
+    "type": "label",
+    "position": [
+      9,
+      77
+    ],
+    "hAnchor": "left",
+    "value": "DPS:"
+    }
+  },
+  { "op": "add", "path": "/dpsLabel",
+    "value": {
+    "type": "label",
+    "position": [
+      148,
+      77
+    ],
+    "hAnchor": "right",
+    "value": ""
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/levelLabel/position/1",
+    "value": 196
+  },
+  {
+    "op": "replace",
+    "path": "/altAbilityTitleLabel/position/1",
+    "value": 50
+  },
+  {
+    "op": "replace",
+    "path": "/altAbilityLabel/position/1",
+    "value": 50
+  },
+  {
+    "op": "replace",
+    "path": "/speedTitleLabel/position/1",
+    "value": 59
+  },
+  {
+    "op": "replace",
+    "path": "/speedLabel/position/1",
+    "value": 59
+  },
+  {
+    "op": "replace",
+    "path": "/damagePerShotTitleLabel/position/1",
+    "value": 68
+  },
+  {
+    "op": "replace",
+    "path": "/damagePerShotLabel/position/1",
+    "value": 68
+  }
+]

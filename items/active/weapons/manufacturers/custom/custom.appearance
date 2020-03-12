@@ -1,0 +1,4 @@
+{
+  //uses a muzzle flash colored to the element if the weapon uses the default muzzleflash
+  "useElementalMuzzleFlash" : true
+}

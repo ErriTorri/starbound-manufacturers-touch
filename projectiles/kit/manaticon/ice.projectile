@@ -1,0 +1,22 @@
+{
+  "projectileName" : "kit_projectile_manaticonice",
+  "physics" : "laser",
+  "bounces" : 2,
+  "damageKindImage" : "icon.png",
+  "image" : "ice.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "power" : 55,
+  "speed" : 35,
+  "emitters" : [ "iceplasma" ],
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "lightColor" : [52, 112, 153],
+  "damageKind" : "iceplasmabullet"
+}

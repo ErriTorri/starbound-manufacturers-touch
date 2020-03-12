@@ -1,0 +1,29 @@
+{
+  "kind" : "kit_effect_physicalbarrier",
+  "definition" : {
+    "duration" : 1.9,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ "kit_particle_physicalswoosh1", "iceswoosh3", "kit_particle_physicalswoosh1", "kit_particle_physicalswoosh1", "iceswoosh3" ]
+      ],
+      "sounds" : [
+        [ ]
+      ]
+    },
+    "particles" : [
+      [ "kit_particle_physicalswoosh1", "iceswoosh3", "kit_particle_physicalswoosh1", "kit_particle_physicalswoosh1", "iceswoosh3" ]
+    ],
+    "sounds" : [
+      [ ]
+    ],
+    "stop" : {
+      "particles" : [
+        [ "kit_particle_physicalswoosh1", "barriericeaura", "iceshard", "kit_particle_physicalswoosh1", "iceshard", "iceswoosh3" ]
+      ],
+      "sounds" : [
+        [ ]
+      ]
+    }
+  }
+}

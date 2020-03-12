@@ -1,0 +1,96 @@
+[
+  {
+    "op": "add",
+    "path": "/builderConfig/0/manufacturer",
+    "value": [
+      "callox",
+      "custom",
+      "necrolix",
+      "shadeco",
+      "teklacki",
+      "xiali"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/noStatChanges",
+    "value": true
+  },
+  {
+    "op": "remove",
+    "path": "/elementalType"
+  },
+  {
+    "op": "remove",
+    "path": "/fireSounds"
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/treatPhysicalAsElementalType",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/noElementalTypeUnlessForced",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/elementalType",
+    "value": [
+      "fire",
+      "ice",
+      "electric",
+      "poison"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/elementalConfig",
+    "value": {
+      "fire": {
+        "fireSounds": [
+          [
+            "/sfx/melee/swing_axe_fire1.ogg",
+            "/sfx/melee/swing_axe_fire2.ogg",
+            "/sfx/melee/swing_axe_fire3.ogg"
+          ]
+        ]
+      },
+      "ice": {
+        "fireSounds": [
+          [
+            "/sfx/melee/swing_axe_ice1.ogg",
+            "/sfx/melee/swing_axe_ice2.ogg",
+            "/sfx/melee/swing_axe_ice3.ogg"
+          ]
+        ]
+      },
+      "poison": {
+        "fireSounds": [
+          [
+            "/sfx/melee/swing_axe_poison1.ogg",
+            "/sfx/melee/swing_axe_poison2.ogg",
+            "/sfx/melee/swing_axe_poison3.ogg"
+          ]
+        ]
+      },
+      "electric": {
+        "fireSounds": [
+          [
+            "/sfx/melee/swing_axe_electric1.ogg",
+            "/sfx/melee/swing_axe_electric2.ogg",
+            "/sfx/melee/swing_axe_electric3.ogg"
+          ]
+        ]
+      },
+      "physical": {
+        "fireSounds": [
+          [
+            "/sfx/melee/swing_axe.ogg"
+          ]
+        ]
+      }
+    }
+  }
+]

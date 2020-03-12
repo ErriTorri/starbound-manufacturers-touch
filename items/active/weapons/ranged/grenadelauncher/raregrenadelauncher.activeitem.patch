@@ -1,0 +1,32 @@
+[
+  {
+    "op": "add",
+    "path": "/builderConfig/0/manufacturer",
+    "value": [
+      "custom",
+      "manaticon",
+      "rotik",
+      "shadeco",
+      "xiali"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/treatPhysicalAsElementalType",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/builderConfig/0/elementalConfig/physical",
+    "value": {
+      "primaryAbility": {
+        "projectileType": [
+          "grenade",
+          "impactgrenade",
+          "stickygrenade",
+          "proximitymine"
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "op": "add",
+    "path": "/manufacturerNameLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        12,
+        92
+      ],
+      "hAnchor": "left",
+      "value": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/levelLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        134,
+        150
+      ],
+      "hAnchor": "left",
+      "value": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/critChanceTitleLabel",
+    "value": {
+      "type": "label",
+      "position": [ 16, 145 ],
+      "hAnchor": "left",
+      "value": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/critChanceLabel",
+    "value": {
+      "type": "label",
+      "position": [ 30, 135 ],
+      "hAnchor": "right",
+      "value": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/critBonusTitleLabel",
+    "value": {
+      "type": "label",
+      "position": [ 16, 125 ],
+      "hAnchor": "left",
+      "value": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/critBonusLabel",
+    "value": {
+      "type": "label",
+      "position": [ 30, 115 ],
+      "hAnchor": "right",
+      "value": ""
+    }
+  }
+]

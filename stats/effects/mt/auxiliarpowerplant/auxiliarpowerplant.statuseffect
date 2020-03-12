@@ -1,0 +1,19 @@
+{
+  "name" : "mt_auxiliarpowerplant",
+  "effectConfig" : {
+    "regenBonusAmount" : 1.0,
+    "blockTimeBonusAmount" : 0.3,
+    "emissionRate" : 5
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "auxiliarpowerplant.lua"
+  ],
+  "scriptDelta" : 0,
+
+  "animationConfig" : "auxiliarpowerplant.animation",
+
+  "label" : "Auxiliary Powerplant",
+  "icon" : "/interface/statuses/energyregen.png"
+}

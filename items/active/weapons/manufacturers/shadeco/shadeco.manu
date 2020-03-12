@@ -1,0 +1,59 @@
+{
+  "manufacturerName" : "shadeco",
+  "friendlyName" : "Shade Co.",
+  "nameColor" : "9534b1",
+  "priceMultiplier" : 1.0,
+
+  "prefix" : [
+    "Deft ",
+    "Hidden ",
+    "Shaded ",
+    "Serpent ",
+    "Spy's ",
+    "Shadow "
+  ],
+  "appearance" : "/items/active/weapons/manufacturers/shadeco/shadeco.appearance",
+
+  "defaultElementalType" : "poison",
+  "elementalType" : [
+    "physical",
+    "ice",
+    "electric",
+    "poison",
+    //FU elements
+    "shadow"
+  ],
+  
+  "ranged" : {
+    "replaceScripts" : [
+     {  "script" : "/items/active/weapons/ranged/gun.lua", "replacement" : "/items/active/weapons/components/modifiableGun.lua" }
+    ],
+    "scripts" : [ "/items/active/weapons/components/scaleValueOverTime.lua" ],
+  
+    "primaryAbility" : {
+      "critChanceMultiplier" : 1.15,
+      "critBonusMultiplier" : 0.25,
+      "inaccuracyMultiplier" : {
+        "evalFunction" : "shadeCoInaccuracyMultiplierByFireTime",
+        "variable" : "fireTime"
+      },
+      "setVariables" : [
+      {
+        "variable" : "scaleValueOverTime",
+        "value" : {
+          "values" : [
+          { "variable" : "inaccuracy", "minimumMultiplier" : 0.1, "attacksToReachMultiplier" : 10 } //value, then the minimum (or maximum) that it scale to as a multiplier * itself, then how many attacks to reach that
+          ]
+        }
+      }]
+    }
+  },
+  
+  "melee" : {
+    "primaryAbility" : {
+      "fireTimeMultiplier" : 0.95,
+      "critChanceMultiplier" : 1.15,
+      "critBonusMultiplier" : 0.25
+    }
+  }
+}

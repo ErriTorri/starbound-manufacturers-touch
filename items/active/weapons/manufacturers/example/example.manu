@@ -1,0 +1,78 @@
+{
+  "manufacturerName" : "coolcompany",
+  "friendlyName" : "Cool Company", //the name the player will see
+  "nameColor" : "b9c0ec", //the color of the name when it is shown on a tooltip
+  "priceMultiplier" : 1.0, //the price of the weapon is its base price * this
+
+  "prefix" : [ //the weapon prefixes, ordered by level
+    "Neat ",
+	"Cool ",
+	"Great ",
+	"Amazing! ",
+	"Out of this world! ", //avoid too long of prefixes, like this
+	"Spacetastic "
+  ],
+  
+  //the path to the appearance file
+  "appearance" : "/items/active/weapons/manufacturers/example/example.appearance",
+
+  //The damage type it defaults to when it generates one that isn't allowed
+  "defaultElementalType" : "physical", //what element the builder defaults to when the seed generated an element for the weapon that the manufacturer doesn't support
+  "elementalType" : [ //a list of elements that the weapon can have. if the weapon has an element that isn't allowed, it uses the default element. 
+    "physical",
+	"electric",
+	"explosive",
+	"fire",
+	"ice",
+	"poison"
+  ],
+
+  //changes for ranged weapons
+  "ranged" : {
+    //the following scripts are added to the weapon
+    "scripts" : [ "/items/active/weapons/components/gunRecoil.lua" ],
+	
+	//if the weapon has one of the following scripts, it gets replaced
+    "replaceScripts" : [
+     {
+        "script" : "/items/active/weapons/ranged/gun.lua", //script you want to replace
+        "replacement" : "/items/active/weapons/components/modifiableGun.lua" //what you want to replace it with
+      }
+    ],
+	
+	"modifyVariables" : [
+	  {
+	    "variable" :  "primaryAbility.inaccuracy",
+		"operation" : "multiply",
+		"value" :     100
+	  }
+	],
+	
+	"primaryAbility" : {
+      "baseDpsMultiplier" : 1.15, //increases the baseDps by this
+	  
+	   //increases the fireTime using a function
+	  "fireTimeMultiplier" : {
+        "evalFunction" : "calloxFireTimeMultiplier", //the function used
+        "variable" : "fireTime" //the variable that is used as input to the function
+      },
+	  
+	   //adds variables to this weapon for scripts to use
+      "setVariables" : [
+        {
+          "variable" : "recoil",
+          "value" : { "speed" : 200.0, "force" : 1500.0 }
+        }
+      ],
+	  
+	  //replaces projectiles of one type with another
+	  "projectileReplacements" : [
+	    { "projectile" : "iceplasma", "replacement" : "hivebomb"}
+	  ]
+	}
+  },
+  
+  //changes for melee weapons
+  //see "ranged" for how to modify this
+  "melee" : { }
+}

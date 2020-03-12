@@ -1,0 +1,12 @@
+{
+  "defaultMeleePalette"  : "/items/active/weapons/manufacturers/shadeco/melee.palettes",
+  "defaultRangedPalette" : "/items/active/weapons/manufacturers/shadeco/ranged.palettes",
+  
+  //uses a muzzle flash colored to the element if the weapon uses the default muzzleflash
+  "useElementalMuzzleFlash" : true,
+  
+  // after processing weapon, replaces category with different one
+  "categoryMappings" : {
+    "dagger" : "mtStiletto"
+  }
+}

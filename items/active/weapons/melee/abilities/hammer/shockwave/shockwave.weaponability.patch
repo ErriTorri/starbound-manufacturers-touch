@@ -1,0 +1,70 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/particleEmitters/physicalCharge",
+    "value": {
+      "active": false,
+      "transformationGroups": [
+        "weapon"
+      ],
+      "emissionRate": 30,
+      "offsetRegion": [
+        -1,
+        0.5,
+        1,
+        2.5
+      ],
+      "particles": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicalcharge",
+    "value": []
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicalfull",
+    "value": []
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicalimpact",
+    "value": [
+      "/sfx/melee/shockwave_physical_slam.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/ability/elementalConfig/physical",
+    "value": {
+      "projectileType": "physicalshockwave",
+      "bothDirections": true
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ability/elementalConfig/fire/bothDirections",
+    "value": false
+  },
+  {
+    "op": "add",
+    "path": "/ability/elementalConfig/ice/bothDirections",
+    "value": false
+  },
+  {
+    "op": "add",
+    "path": "/ability/elementalConfig/poison/bothDirections",
+    "value": false
+  },
+  {
+    "op": "add",
+    "path": "/ability/elementalConfig/electric/bothDirections",
+    "value": false
+  },
+  {
+    "op": "add",
+    "path": "/ability/elementalConfig/water/bothDirections",
+    "value": false
+  }
+]

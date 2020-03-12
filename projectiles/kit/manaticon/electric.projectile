@@ -1,0 +1,22 @@
+{
+  "projectileName" : "kit_projectile_manaticonelectric",
+  "physics" : "laser",
+  "bounces" : 1,
+  "damageKindImage" : "icon.png",
+  "image" : "electric.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "power" : 48,
+  "speed" : 65,
+  "emitters" : [ "electricplasma" ],
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "lightColor" : [102, 32, 110],
+  "damageKind" : "electricplasmabullet"
+}

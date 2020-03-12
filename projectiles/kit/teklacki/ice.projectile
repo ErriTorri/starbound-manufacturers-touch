@@ -1,0 +1,23 @@
+{
+  "projectileName" : "kit_projectile_teklackiice",
+  "physics" : "arrownosticky",
+  "image" : "ice.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKind" : "icedagger",
+  "pointLight" : false,
+  "flippable" : true,
+  "timeToLive" : 8,
+  "emitters" : [ "iceplasma" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "lightColor" : [52, 112, 153],
+  "power" : 50.0,
+  "speed" : 55,
+  "knockback" : 0
+}

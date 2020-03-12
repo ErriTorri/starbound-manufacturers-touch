@@ -1,0 +1,134 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/lights/physicalflash",
+    "value": {
+      "active": false,
+      "position": [
+        3,
+        0
+      ],
+      "color": [
+        40,
+        130,
+        140
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/lights/explosiveflash",
+    "value": {
+      "active": false,
+      "position": [
+        3,
+        0
+      ],
+      "color": [
+        140,
+        139,
+        40
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/particleEmitters/physicalblast",
+    "value": {
+      "active": false,
+      "transformationGroups": [
+        "weapon"
+      ],
+      "emissionRate": 25,
+      "offsetRegion": [
+        0,
+        -0.5,
+        3,
+        0.5
+      ],
+      "particles": [
+	    { "particle" : "defaultred" },
+	    { "particle" : "defaultred" },
+		{ "particle" : "fireswoosh2"},
+		{ "particle" : "fireswoosh2"}
+	    // Old particles for a light bluish style one
+        //{
+        //  "particle": "kit_particle_physicalswoosh1"
+        //},
+        //{
+        //  "particle": "kit_particle_physicalswoosh1"
+        //},
+        //{
+        //  "particle": "iceswoosh3"
+        //},
+        //{
+        //  "particle": "iceswoosh3"
+        //}
+		//
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/particleEmitters/explosiveblast",
+    "value": {
+      "active": false,
+      "transformationGroups": [
+        "weapon"
+      ],
+      "emissionRate": 25,
+      "offsetRegion": [
+        0,
+        -0.5,
+        3,
+        0.5
+      ],
+      "particles": [
+        {
+          "particle": "kit_particle_explosiveswoosh1"
+        },
+        {
+          "particle": "fireswoosh2"
+        },
+        {
+          "particle": "kit_particle_explosiveswoosh1"
+        },
+        {
+          "particle": "fireswoosh2"
+        }
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/physicallancefire",
+    "value": [
+      "/sfx/gun/elemental_lance.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/explosivelancefire",
+    "value": [
+      "/sfx/gun/elemental_lance.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/ability/elementalConfig/physical",
+    "value": {
+      "damageConfig": {
+        "statusEffects": []
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ability/elementalConfig/explosive",
+    "value": {
+      "damageConfig": {
+        "statusEffects": []
+      }
+    }
+  }
+]

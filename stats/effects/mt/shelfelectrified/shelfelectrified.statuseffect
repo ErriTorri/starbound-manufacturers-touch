@@ -1,0 +1,19 @@
+{
+  "name" : "mt_shelfelectrified",
+  "blockingStat" : "electricStatusImmunity",
+
+  "effectConfig" : {
+    "tickDamagePercentage" : 0.1
+  },
+  "defaultDuration" : 2,
+
+  "scripts" : [
+    "shelfelectrified.lua"
+  ],
+
+  "animationConfig" : "shelfelectrified.animation",
+
+  "label" : "Shelf electrified",
+  "icon" : "/interface/statuses/electric.png"
+  
+}

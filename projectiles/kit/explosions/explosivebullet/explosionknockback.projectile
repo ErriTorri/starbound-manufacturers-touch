@@ -1,0 +1,17 @@
+{
+  "projectileName" : "kit_projectile_explosivebulletknockback",
+  "image" : "explosion.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 6,
+  "speed" : 0,
+  "lightColor" : [160, 155, 30],
+  "pointLight" : true,
+  "statusEffects" : [ ],
+  "damagePoly" : [ [-33, 0], [-25, -25], [0, -33], [25, -25], [33, 0], [25, 25], [0, 33], [-25, 25] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "damageKind" : "explosiveplasma",
+  "knockback" : 2
+}

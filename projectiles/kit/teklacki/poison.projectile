@@ -1,0 +1,23 @@
+{
+  "projectileName" : "kit_projectile_teklackipoison",
+  "physics" : "arrownosticky",
+  "image" : "poison.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKind" : "poisondagger",
+  "pointLight" : false,
+  "flippable" : true,
+  "timeToLive" : 8,
+  "emitters" : [ "poisonplasma" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "lightColor" : [67, 110, 32],
+  "power" : 50.0,
+  "speed" : 70,
+  "knockback" : 0
+}

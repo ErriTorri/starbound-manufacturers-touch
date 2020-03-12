@@ -1,0 +1,31 @@
+{
+  "manufacturerName" : "graxus",
+  "friendlyName" : "Graxus",
+  "nameColor" : "bbad0b",
+  "priceMultiplier" : 1.05,
+  
+  "prefix" : [
+    "Strong ",
+	"Potent ",
+	"Heavy ",
+	"Blast ",
+	"Explosive ",
+	"Nuclear "
+  ],
+  
+  "appearance" : "/items/active/weapons/manufacturers/graxus/graxus.appearance",
+  
+  //The damage type it defaults to when it generates one that isn't allowed
+  "defaultElementalType" : "explosive",
+  "elementalType" : [
+    "explosive"
+  ],
+  
+  "ranged" : {	
+    "primaryAbility" : {
+      "baseDpsMultiplier" : 1.15,
+      "energyUsageMultiplier" : 1.2,
+      "inaccuracyMultiplier" : 2.0
+	}
+  }
+}

@@ -1,0 +1,29 @@
+{
+  //what palette to use for melee weapons by default
+  "defaultMeleePalette"  : "/items/active/weapons/manufacturers/callox/melee.palettes",
+  
+  //what palette to use for ranged weapons by default
+  "defaultRangedPalette" : "/items/active/weapons/manufacturers/xiali/ranged.palettes",
+  
+  //uses a muzzle flash colored to the element if the weapon uses the default muzzleflash
+  "useElementalMuzzleFlash" : true,
+  
+  //changes for specific weapon types (chosen by a weapon's category)
+  "specific" : {
+    "assaultRifle" : {
+	  "baseOffset" : [-5.0, 0.25], //offset in the player's hands
+      "muzzleOffset" : [10.0, 0.3125], //offset for the muzzle
+	  
+	  //parts for the weapon's appearance
+	  "animationParts" : {
+        "butt" :   { "path" : "/items/active/weapons/ranged/assaultrifle/butt/<variant>.png",   "variants" : 1, "paletteSwap" : true },
+        "middle" : { "path" : "/items/active/weapons/ranged/assaultrifle/middle/<variant>.png", "variants" : 1, "paletteSwap" : true },
+        "barrel" : { "path" : "/items/active/weapons/ranged/assaultrifle/barrel/<variant>.png", "variants" : 1, "paletteSwap" : true },
+        "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+      },
+      "gunParts" : ["butt", "middle", "barrel"],
+	  "palette" : "/items/active/weapons/manufacturers/graxus/ranged.palettes",
+      "iconDrawables" : ["butt", "middle", "barrel"]
+	}
+  }
+}
