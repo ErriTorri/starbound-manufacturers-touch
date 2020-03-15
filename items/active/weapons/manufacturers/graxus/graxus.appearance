@@ -1,12 +1,12 @@
 {
-  "defaultRangedPalette" : "/items/active/weapons/manufacturers/graxus/ranged.palettes",
-  "useElementalMuzzleFlash" : true,
+  "defaultRangedPalette": "/items/active/weapons/manufacturers/graxus/ranged.palettes",
+  "useElementalMuzzleFlash": true,
   
   // after processing weapon, replaces category with different one
-  "categoryMappings" : {
-    "assaultRifle" : "mtBoomRifle"
+  "categoryMappings": {
+    "assaultRifle": "mtBoomRifle"
   },
   
-  "specific" : {
+  "specific": {
   }
 }

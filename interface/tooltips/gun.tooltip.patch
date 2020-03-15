@@ -29,7 +29,7 @@
       "type": "label",
       "position": [
         130,
-        166
+        170
       ],
       "hAnchor": "right",
       "value": ""
@@ -45,7 +45,7 @@
         102
       ],
       "hAnchor": "left",
-      "value": "DPS:"
+      "value": "Damage Per Second:"
     }
   },
   {
@@ -71,7 +71,7 @@
         93
       ],
       "hAnchor": "left",
-      "value": "EPS:"
+      "value": "Energy Per Second:"
     }
   },
   {
@@ -115,12 +115,14 @@
   },
   {
     "op": "add",
-    "path": "/critChanceTitleLabel",
+    "path": "/critChanceImage",
     "value": {
-      "type": "label",
-      "position": [ 9, 157 ],
-      "hAnchor": "left",
-      "value": ""
+      "type" : "image",
+      "position" : [14, 170],
+      "file" : "",
+      "centered" : true,
+      "maxSize" : [16, 16],
+      "minSize" : [16, 16]
     }
   },
   {
@@ -128,19 +130,22 @@
     "path": "/critChanceLabel",
     "value": {
       "type": "label",
-      "position": [ 22, 147 ],
-      "hAnchor": "right",
+      "position": [10, 160],
+      "hAnchor": "left",
+      "vAnchor": "top",
       "value": ""
     }
   },
   {
     "op": "add",
-    "path": "/critBonusTitleLabel",
+    "path": "/critBonusImage",
     "value": {
-      "type": "label",
-      "position": [ 9, 137 ],
-      "hAnchor": "left",
-      "value": ""
+      "type" : "image",
+      "position" : [14, 144],
+      "file" : "",
+      "centered" : true,
+      "maxSize" : [16, 16],
+      "minSize" : [16, 16]
     }
   },
   {
@@ -148,8 +153,9 @@
     "path": "/critBonusLabel",
     "value": {
       "type": "label",
-      "position": [ 22, 127 ],
-      "hAnchor": "right",
+      "position": [10, 134],
+      "hAnchor": "left",
+      "vAnchor": "top",
       "value": ""
     }
   },
@@ -195,8 +201,8 @@
   },
   {
     "op": "replace",
-    "path": "/handednessLabel/position/1",
-    "value": 166
+    "path": "/handednessLabel/position",
+    "value": [90, 170]
   },
   {
     "op": "replace",

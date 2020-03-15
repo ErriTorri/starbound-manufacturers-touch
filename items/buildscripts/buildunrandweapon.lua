@@ -97,11 +97,81 @@ function build(directory, config, parameters, level, seed)
       config.tooltipFields.levelTitleLabel = ""
     
       local decimalCount = options.getOption("criticalStatDecimalCount") or 1
-	
+
       config.tooltipFields.critChanceTitleLabel = "^orange;Crit %^reset;"
       config.tooltipFields.critBonusTitleLabel = "^yellow;Dmg +^reset;"
-      config.tooltipFields.critChanceLabel =  util.round(configParameter("critChance", 0), decimalCount)
-      config.tooltipFields.critBonusLabel = util.round(configParameter("critBonus", 0), decimalCount)
+      config.tooltipFields.critChanceLabel = configParameter("critChance") and util.round(configParameter("critChance", 0), decimalCount) .. "%" or "--"
+      config.tooltipFields.critBonusLabel = configParameter("critBonus") and util.round(configParameter("critBonus", 0), decimalCount) or "--"
+      config.tooltipFields.stunChanceLabel = configParameter("stunChance") and util.round(configParameter("stunChance", 0), decimalCount) .. "%" or "--"
+      
+      if config.tooltipKind == "gun" or config.tooltipKind == "gun2" then
+        config.tooltipFields.critChanceTitleLabel = ""
+        config.tooltipFields.critBonusTitleLabel = ""
+      end
+
+    -- ***ORIGINAL CODE BY ALBERTO-ROTA and SAYTER***
+    -- FU ADDITIONS
+
+      config.tooltipFields.magazineSizeImage = "/interface/statuses/ammo.png"  
+      config.tooltipFields.reloadTimeImage = "/interface/statuses/reload.png"  
+      config.tooltipFields.critBonusImage = "/interface/statuses/dmgplus.png"  
+      config.tooltipFields.critChanceImage = "/interface/statuses/crit2.png" 
+
+      -- weapon abilities
+
+      --overheating
+      if config.primaryAbility.overheatLevel then
+        config.tooltipFields.overheatLabel = util.round(config.primaryAbility.overheatLevel / config.primaryAbility.heatGain, 1)
+        config.tooltipFields.cooldownLabel = util.round(config.primaryAbility.overheatLevel / config.primaryAbility.heatLossRateMax, 1)    
+      end
+
+      -- Staff and Wand specific --
+      if config.primaryAbility.projectileParameters then
+        if config.primaryAbility.projectileParameters.baseDamage then
+          config.tooltipFields.staffDamageLabel = config.primaryAbility.projectileParameters.baseDamage  
+        end	     
+      end    
+
+      if config.primaryAbility.energyCost then
+        config.tooltipFields.staffEnergyLabel = config.primaryAbility.energyCost
+      end
+      if config.primaryAbility.energyPerShot then
+        config.tooltipFields.staffEnergyLabel = config.primaryAbility.energyPerShot
+      end
+      if config.primaryAbility.maxCastRange then
+        config.tooltipFields.staffRangeLabel = config.primaryAbility.maxCastRange
+      else
+            config.tooltipFields.staffRangeLabel = 25
+      end
+      if config.primaryAbility.projectileCount then
+        config.tooltipFields.staffProjectileLabel = config.primaryAbility.projectileCount
+      else
+            config.tooltipFields.staffProjectileLabel = 1
+      end
+
+      -- Recoil
+      if config.primaryAbility.recoilVelocity then
+        config.tooltipFields.isCrouch = configParameter("crouchReduction",false)
+        config.tooltipFields.recoilStrength = util.round(configParameter("recoilVelocity",0), 0)
+        config.tooltipFields.recoilCrouchStrength = util.round(configParameter("crouchRecoilVelocity",0), 0)    
+      end
+
+      if (parameters.isAmmoBased ==1 ) then   -- if its ammo based, we set the relevant data to the tooltip
+        parameters.magazineSizeFactor = valueOrRandom(parameters.magazineSizeFactor, seed, "magazineSizeFactor")
+        parameters.reloadTimeFactor = valueOrRandom(parameters.reloadTimeFactor, seed, "reloadTimeFactor")
+        config.magazineSize = scaleConfig(parameters.primaryAbility.energyUsageFactor, config.magazineSize) or 0
+        config.reloadTime = scaleConfig(parameters.reloadTimeFactor, config.reloadTime) or 0  
+        config.tooltipFields.energyPerShotLabel = util.round((energyUsage * fireTime)/2, 1)  -- these weapons have 50% energy cost
+        config.tooltipFields.magazineSizeLabel = util.round(configParameter("magazineSize",1), 0) --
+        config.tooltipFields.reloadTimeLabel = util.round(configParameter("reloadTime",1),1)  .. "s"
+      else
+        config.magazineSize = 0
+        config.reloadTime = 0       
+        config.tooltipFields.magazineSizeLabel = "--"
+        config.tooltipFields.reloadTimeLabel = "--"        
+      end
+
+      -- END OF FU ADDITIONS
     end
     --End of FU tooltips
 	

@@ -1,5 +1,5 @@
 {
-  "version" : "1.2.14",
+  "version" : "1.2.15",
   "tags" : "Weapons|Mechanics",
   "author" : "Kit",
   "description" : "Manufacturer's Touch gives randomly generated weapons a bit more character by allowing their creator to play a role on the statistics and appearance of the weapon. In addition, this provides an engine to allow mod makers to create their own manufacturers, as well as make use of resources within, such as explosive bullets.\n\nMake sure to check compatibility to make sure this will work with your other mods!",

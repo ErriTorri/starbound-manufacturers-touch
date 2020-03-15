@@ -61,6 +61,8 @@
 	],
 	"primaryAbility" : {
       "baseDpsMultiplier" : 0.95,
+	  "magazineSizeMultiplier": 0.65,
+	  "reloadTimeMultiplier": 1.5,
 	  "setVariables" : [
 	    {
 	      "variable" : "whileWieldingStatus",

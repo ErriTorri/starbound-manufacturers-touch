@@ -6,11 +6,11 @@
   
   "prefix" : [
     "Quality ",
-	"Refined ",
-	"New! ",
-	"Streamlined ",
-	"Enterprise ",
-	"Synergy " //unused due to length: revolutionary
+    "Refined ",
+    "New! ",
+    "Streamlined ",
+    "Enterprise ",
+    "Synergy "
   ],
   
   "appearance" : "/items/active/weapons/manufacturers/manaticon/manaticon.appearance",
@@ -22,34 +22,34 @@
     "ice",
     "electric",
     "poison",
-	//FU elements
-	"cosmic",
-	"radioactive",
-	"shadow"
+    //FU elements
+    "cosmic",
+    "radioactive",
+    "shadow"
   ],
   
   "ranged" : {
-      "primaryAbility" : {
+    "primaryAbility" : {
       "baseDpsMultiplier" : 0.9,
       "fireTimeMultiplier" : 0.9,
-	  "energyUsageMultiplier" : 0.9,
+      "energyUsageMultiplier" : 0.9,
       "inaccuracyMultiplier" : 0.75,
-	  
-	  "projectileReplacements" : [
-	    { "projectile" : "electricplasma", "replacement" : "kit_projectile_manaticonelectric" },
-	    { "projectile" : "fireplasma",     "replacement" : "kit_projectile_manaticonfire" },
-	    { "projectile" : "iceplasma",      "replacement" : "kit_projectile_manaticonice" },
-	    { "projectile" : "poisonplasma",   "replacement" : "kit_projectile_manaticonpoison" },
-		//FU Elements
-	    { "projectile" : "cosmicplasma",      "replacement" : "kit_projectile_manaticoncosmic" },
-	    { "projectile" : "radioactiveplasma", "replacement" : "kit_projectile_manaticonradioactive" },
-	    { "projectile" : "shadowplasma",      "replacement" : "kit_projectile_manaticonshadow" }
-	  ]
-	}
+      
+      "projectileReplacements" : [
+        { "projectile" : "electricplasma", "replacement" : "kit_projectile_manaticonelectric" },
+        { "projectile" : "fireplasma",     "replacement" : "kit_projectile_manaticonfire" },
+        { "projectile" : "iceplasma",      "replacement" : "kit_projectile_manaticonice" },
+        { "projectile" : "poisonplasma",   "replacement" : "kit_projectile_manaticonpoison" },
+        //FU Elements
+        { "projectile" : "cosmicplasma",      "replacement" : "kit_projectile_manaticoncosmic" },
+        { "projectile" : "radioactiveplasma", "replacement" : "kit_projectile_manaticonradioactive" },
+        { "projectile" : "shadowplasma",      "replacement" : "kit_projectile_manaticonshadow" }
+      ]
+    }
   },
   
   "meleePrimaryAbility" : {
     "fireTimeMultiplier" : 0.95,
-	"knockbackMultiplier" : 0.9
+    "knockbackMultiplier" : 0.9
   }
 }

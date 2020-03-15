@@ -1,46 +1,51 @@
 {
-  "defaultMeleePalette"  : "/items/active/weapons/manufacturers/callox/melee.palettes",
-  "defaultRangedPalette" : "/items/active/weapons/manufacturers/callox/ranged.palettes",
+  "defaultMeleePalette": "/items/active/weapons/manufacturers/callox/melee.palettes",
+  "defaultRangedPalette": "/items/active/weapons/manufacturers/callox/ranged.palettes",
   
   //uses a muzzle flash colored to the element if the weapon uses the default muzzleflash
-  "useElementalMuzzleFlash" : true,
+  "useElementalMuzzleFlash": true,
+
+  // after processing weapon, replaces category with different one
+  "categoryMappings": {
+    "sniperRifle": "mtHuntingRifle"
+  },
   
-  "specific" : {
-    "axe" :          { "nameGenerator" : "/items/active/weapons/manufacturers/callox/names/axe.config:nameGen" },
-    "broadsword" :   { "nameGenerator" : "/items/active/weapons/manufacturers/callox/names/broadsword.config:nameGen" },
-    "dagger" :       { "nameGenerator" : "/items/active/weapons/manufacturers/callox/names/dagger.config:nameGen" },
-    "hammer" :       { "nameGenerator" : "/items/active/weapons/manufacturers/callox/names/hammer.config:nameGen" },
-    "quarterstaff" : { "nameGenerator" : "/items/active/weapons/manufacturers/callox/names/spear.config:nameGen" },
+  "specific": {
+    "axe":          { "nameGenerator": "/items/active/weapons/manufacturers/callox/names/axe.config:nameGen" },
+    "broadsword":   { "nameGenerator": "/items/active/weapons/manufacturers/callox/names/broadsword.config:nameGen" },
+    "dagger":       { "nameGenerator": "/items/active/weapons/manufacturers/callox/names/dagger.config:nameGen" },
+    "hammer":       { "nameGenerator": "/items/active/weapons/manufacturers/callox/names/hammer.config:nameGen" },
+    "quarterstaff": { "nameGenerator": "/items/active/weapons/manufacturers/callox/names/spear.config:nameGen" },
 	// Some FU stuff uses capital Q
-    "Quarterstaff" : { "nameGenerator" : "/items/active/weapons/manufacturers/callox/names/spear.config:nameGen" },
-    "shortspear" :   { "nameGenerator" : "/items/active/weapons/manufacturers/callox/names/spear.config:nameGen" },
-    "shortsword" :   { "nameGenerator" : "/items/active/weapons/manufacturers/callox/names/dagger.config:nameGen" },
-    "spear" :        { "nameGenerator" : "/items/active/weapons/manufacturers/callox/names/spear.config:nameGen" },
+    "Quarterstaff": { "nameGenerator": "/items/active/weapons/manufacturers/callox/names/spear.config:nameGen" },
+    "shortspear":   { "nameGenerator": "/items/active/weapons/manufacturers/callox/names/spear.config:nameGen" },
+    "shortsword":   { "nameGenerator": "/items/active/weapons/manufacturers/callox/names/dagger.config:nameGen" },
+    "spear":        { "nameGenerator": "/items/active/weapons/manufacturers/callox/names/spear.config:nameGen" },
     
-    "assaultRifle" : { "nameGenerator" : "/items/active/weapons/manufacturers/callox/names/assaultrifle.config:nameGen" },
+    "assaultRifle": { "nameGenerator": "/items/active/weapons/manufacturers/callox/names/assaultrifle.config:nameGen" },
     
-    "pistol" : {
-      "nameGenerator" : "/items/active/weapons/manufacturers/callox/names/pistol.config:nameGen",
-      "animationParts" : {
-        "butt" : { "path" : "/items/active/weapons/manufacturers/callox/pistol_butt/<variant>.png", "variants" : 4, "paletteSwap" : true }
+    "pistol": {
+      "nameGenerator": "/items/active/weapons/manufacturers/callox/names/pistol.config:nameGen",
+      "animationParts": {
+        "butt": { "path": "/items/active/weapons/manufacturers/callox/pistol_butt/<variant>.png", "variants": 4, "paletteSwap": true }
       }
     },
-    "machinePistol" : {
-      "nameGenerator" : "/items/active/weapons/manufacturers/callox/names/pistol.config:nameGen",
-      "animationParts" : {
-        "butt" : { "path" : "/items/active/weapons/manufacturers/callox/pistol_butt/<variant>.png", "variants" : 4, "paletteSwap" : true }
+    "machinePistol": {
+      "nameGenerator": "/items/active/weapons/manufacturers/callox/names/pistol.config:nameGen",
+      "animationParts": {
+        "butt": { "path": "/items/active/weapons/manufacturers/callox/pistol_butt/<variant>.png", "variants": 4, "paletteSwap": true }
       }
     },
-    "shotgun" : {
-      "nameGenerator" : "/items/active/weapons/manufacturers/callox/names/shotgun.config:nameGen",
-      "animationParts" : {
-        "butt" : { "path" : "/items/active/weapons/manufacturers/callox/shotgun_butt/<variant>.png", "variants" : 7, "paletteSwap" : true }
+    "shotgun": {
+      "nameGenerator": "/items/active/weapons/manufacturers/callox/names/shotgun.config:nameGen",
+      "animationParts": {
+        "butt": { "path": "/items/active/weapons/manufacturers/callox/shotgun_butt/<variant>.png", "variants": 7, "paletteSwap": true }
       }
     },
-    "sniperRifle" : {
-      "nameGenerator" : "/items/active/weapons/manufacturers/callox/names/sniper.config:nameGen",
-      "animationParts" : {
-        "butt" : { "path" : "/items/active/weapons/manufacturers/callox/sniperrifle_butt/<variant>.png", "variants" : 7, "paletteSwap" : true }
+    "sniperRifle": {
+      "nameGenerator": "/items/active/weapons/manufacturers/callox/names/sniper.config:nameGen",
+      "animationParts": {
+        "butt": { "path": "/items/active/weapons/manufacturers/callox/sniperrifle_butt/<variant>.png", "variants": 7, "paletteSwap": true }
       }
     }
   }

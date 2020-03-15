@@ -296,30 +296,79 @@ function build(directory, config, parameters, level, seed)
 	  config.tooltipFields.levelLabel = ""
   end
   
+  config.tooltipFields.dpsLabel = util.round(baseDps * config.damageLevelMultiplier, 1)
+  config.tooltipFields.speedLabel = util.round(1 / fireTime, 1)
+  config.tooltipFields.damagePerShotLabel = util.round(baseDps * fireTime * config.damageLevelMultiplier, 1)
+  config.tooltipFields.energyPerShotLabel = util.round(energyUsage * fireTime, 1)
+  
   --For compatibility with FU
   if options.isFrackinUniverseLoaded() then
     config.tooltipFields.levelTitleLabel = ""
     
     local decimalCount = options.getOption("criticalStatDecimalCount") or 0
+
+    config.tooltipFields.magazineSizeImage = "/interface/statuses/ammo.png"  
+    config.tooltipFields.reloadTimeImage = "/interface/statuses/reload.png"  
+    config.tooltipFields.critBonusImage = "/interface/statuses/dmgplus.png"  
+    config.tooltipFields.critChanceImage = "/interface/statuses/crit2.png"
+
+    if config.tooltipKind == "gun" or config.tooltipKind == "gun2" then
+      config.tooltipFields.critChanceTitleLabel = ""
+      config.tooltipFields.critBonusTitleLabel = ""
+    end
 	
-    config.tooltipFields.critChanceTitleLabel = "^orange;Crit %^reset;"
-    config.tooltipFields.critBonusTitleLabel = "^yellow;Dmg +^reset;"
-    config.tooltipFields.critChanceLabel =  util.round(configParameter("critChance", 0), decimalCount)
-    config.tooltipFields.critBonusLabel = util.round(configParameter("critBonus", 0), decimalCount)
+    config.tooltipFields.critChanceLabel = configParameter("critChance") and util.round(configParameter("critChance", 0), decimalCount) .. "%" or "--"
+    config.tooltipFields.critBonusLabel = configParameter("critBonus") and util.round(configParameter("critBonus", 0), decimalCount) or "--"
+    config.tooltipFields.stunChanceLabel = configParameter("stunChance") and util.round(configParameter("stunChance", 0), decimalCount) or "--"
+    
+    if config.category == "Jumprifle" then
+      config.tooltipFields.critBonusLabel = 3
+      config.tooltipFields.critChanceLabel = 1 
+    end
+    
+    -- ***ORIGINAL CODE BY ALBERTO-ROTA and SAYTER***
+    -- FU ADDITIONS
+    
+    parameters.isAmmoBased = configParameter("isAmmoBased")
+
+    if not (config.category == "Jumprifle") then --exclude these weapon types
+      if (parameters.ammoLocked == nil) then
+        if (math.random(0,1) > 0.5) and (config.muzzleOffset) then  -- 50% chance for the weapon to be Ammo based or Energy based
+          parameters.isAmmoBased = 1
+          config.tooltipKind = "gun2"
+          parameters.tooltipKind = "gun2"
+        else
+          parameters.isAmmoBased = 0
+      end 
+        parameters.ammoLocked = 1 --set it to 1 so this step never repeats	    
+      end  
+    end
+    
+    if (parameters.isAmmoBased ==1 ) then   -- if its ammo based, we set the relevant data to the tooltip
+      parameters.magazineSizeFactor = valueOrRandom(parameters.magazineSizeFactor, seed, "magazineSizeFactor")
+      parameters.reloadTimeFactor = valueOrRandom(parameters.reloadTimeFactor, seed, "reloadTimeFactor")
+      config.magazineSize = scaleConfig(parameters.primaryAbility.energyUsageFactor, config.magazineSize) or 0
+      config.reloadTime = scaleConfig(parameters.reloadTimeFactor, config.reloadTime) or 0  
+      config.tooltipFields.energyPerShotLabel = util.round((energyUsage * fireTime)/2, 1)  -- these weapons have 50% energy cost
+      config.tooltipFields.magazineSizeLabel = util.round(configParameter("magazineSize",1), 0) --
+      config.tooltipFields.reloadTimeLabel = util.round(configParameter("reloadTime",1),1)  .. "s"
+    else
+      config.magazineSize = 0
+      config.reloadTime = 0       
+      config.tooltipFields.magazineSizeLabel = "--"
+      config.tooltipFields.reloadTimeLabel = "--"        
+    end
+    
+    -- END OF FU ADDITIONS
   end
-  --End of FU tooltips
-  
-  config.tooltipFields.dpsLabel = util.round(baseDps * config.damageLevelMultiplier, 1)
-  config.tooltipFields.speedLabel = util.round(1 / fireTime, 1)
-  config.tooltipFields.damagePerShotLabel = util.round(baseDps * fireTime * config.damageLevelMultiplier, 1)
-  config.tooltipFields.energyPerShotLabel = util.round(energyUsage * fireTime, 1)
+  --End of FU compatibility
   
   config.tooltipFields.manufacturerNameLabel = manufacturerName
   config.tooltipFields.energyPerSecondLabel = util.round(energyUsage, 1)
   if energyUsage and energyUsage > 0 and baseDps then
     config.tooltipFields.damagePerEnergyLabel = util.round((baseDps * config.damageLevelMultiplier) / energyUsage, 2)
   else
-    config.tooltipFields.damagePerEnergyLabel = "---"
+    config.tooltipFields.damagePerEnergyLabel = "--"
   end
   
   if elementalType ~= "physical" then
@@ -333,7 +382,7 @@ function build(directory, config, parameters, level, seed)
     config.tooltipFields.altAbilityTitleLabel = "Special:"
     config.tooltipFields.altAbilityLabel = config.altAbility.name or "unknown"
   end
-  
+
   return config, parameters
 end
 

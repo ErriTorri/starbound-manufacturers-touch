@@ -1,42 +1,45 @@
 {
   "defaultMeleePalette"  : "/items/active/weapons/manufacturers/manaticon/melee.palettes",
-  "defaultRangedPalette" : "/items/active/weapons/manufacturers/manaticon/ranged.palettes",
-  "defaultElementalAppearance" : "/items/active/weapons/elements/elemental.appearance",
+  "defaultRangedPalette": "/items/active/weapons/manufacturers/manaticon/ranged.palettes",
+  "defaultElementalAppearance": "/items/active/weapons/elements/elemental.appearance",
   
-  "useElementalMuzzleFlash" : true,
+  "useElementalMuzzleFlash": true,
   
   // after processing weapon, replaces category with different one
-  "categoryMappings" : {
-    "assaultRifle" : "mtHeavyBlaster",
-    "pistol" : "mtLightBlaster"
+  "categoryMappings": {
+    "assaultRifle":  "mtHeavyBlaster",
+    "pistol":        "mtLightBlaster",
+    "machinePistol": "mtLightAutoBlaster",
+    "shotgun":       "mtScatterBlaster",
+    "sniperRifle":   "mtSniperBlaster"
   },
   
-  "specific" : {
-    "assaultRifle" : {
-	  "animationParts" : {
-        "middle" : { "path" : "/items/active/weapons/manufacturers/manaticon/assaultrifle_middle/<variant>.png", "variants" : 18, "paletteSwap" : true },
-        "barrel" : { "path" : "/items/active/weapons/manufacturers/manaticon/assaultrifle_barrel/<variant>.png", "variants" : 13, "paletteSwap" : true }
+  "specific": {
+    "assaultRifle": {
+      "animationParts": {
+        "middle": { "path": "/items/active/weapons/manufacturers/manaticon/assaultrifle_middle/<variant>.png", "variants": 18, "paletteSwap": true },
+        "barrel": { "path": "/items/active/weapons/manufacturers/manaticon/assaultrifle_barrel/<variant>.png", "variants": 13, "paletteSwap": true }
       }
-	},
-    "pistol" : {
-	  "animationParts" : {
-        "barrel" : { "path" : "/items/active/weapons/manufacturers/manaticon/pistol_barrel/<variant>.png", "variants" : 12, "paletteSwap" : true }
+    },
+    "pistol": {
+      "animationParts": {
+        "barrel": { "path": "/items/active/weapons/manufacturers/manaticon/pistol_barrel/<variant>.png", "variants": 12, "paletteSwap": true }
       }
-	},
-    "machinePistol" : {
-	  "animationParts" : {
-        "barrel" : { "path" : "/items/active/weapons/manufacturers/manaticon/pistol_barrel/<variant>.png", "variants" : 12, "paletteSwap" : true }
+    },
+    "machinePistol": {
+      "animationParts": {
+        "barrel": { "path": "/items/active/weapons/manufacturers/manaticon/pistol_barrel/<variant>.png", "variants": 12, "paletteSwap": true }
       }
-	},
-    "shotgun" : {
-	  "animationParts" : {
-        "barrel" : { "path" : "/items/active/weapons/manufacturers/manaticon/shotgun_barrel/<variant>.png", "variants" : 15, "paletteSwap" : true }
+    },
+    "shotgun": {
+      "animationParts": {
+        "barrel": { "path": "/items/active/weapons/manufacturers/manaticon/shotgun_barrel/<variant>.png", "variants": 15, "paletteSwap": true }
       }
-	},
-	"sniperRifle" : {
-	  "animationParts" : {
-        "barrel" : { "path" : "/items/active/weapons/manufacturers/manaticon/sniperrifle_barrel/<variant>.png", "variants" : 12, "paletteSwap" : true }
+    },
+    "sniperRifle": {
+      "animationParts": {
+        "barrel": { "path": "/items/active/weapons/manufacturers/manaticon/sniperrifle_barrel/<variant>.png", "variants": 12, "paletteSwap": true }
       }
-	}
+    }
   }
 }

@@ -1,72 +1,74 @@
 {
   "defaultMeleePalette"  : "/items/active/weapons/manufacturers/teklacki/melee.palettes",
-  "defaultRangedPalette" : "/items/active/weapons/manufacturers/teklacki/ranged.palettes",
+  "defaultRangedPalette": "/items/active/weapons/manufacturers/teklacki/ranged.palettes",
   
   //uses a muzzle flash colored to the element if the weapon uses the default muzzleflash
-  "useElementalMuzzleFlash" : false,
+  "useElementalMuzzleFlash": false,
   
   // after processing weapon, replaces category with different one
-  "categoryMappings" : {
-    "assaultRifle" : "mtAssaultNeedler",
-    "machinePistol" : "mtMachineNeedler",
-    "dagger" : "mtRazor"
+  "categoryMappings": {
+    "assaultRifle": "mtAssaultNeedler",
+    "broadsword": "mtGreatsword",
+    "hammer": "mtWarhammer",
+    "machinePistol": "mtMachineNeedler",
+    "dagger": "mtRazor"
   },
   
-  "specific" : {
-    "axe" : { "nameGenerator" : "/items/active/weapons/manufacturers/teklacki/names/axe.config:nameGen" },
-    "dagger" : { "nameGenerator" : "/items/active/weapons/manufacturers/teklacki/names/dagger.config:nameGen" },
-    "hammer" : { "nameGenerator" : "/items/active/weapons/manufacturers/teklacki/names/hammer.config:nameGen" },
-    "quarterstaff" : { "nameGenerator" : "/items/active/weapons/manufacturers/teklacki/names/spear.config:nameGen" },
+  "specific": {
+    "axe": { "nameGenerator": "/items/active/weapons/manufacturers/teklacki/names/axe.config:nameGen" },
+    "dagger": { "nameGenerator": "/items/active/weapons/manufacturers/teklacki/names/dagger.config:nameGen" },
+    "hammer": { "nameGenerator": "/items/active/weapons/manufacturers/teklacki/names/hammer.config:nameGen" },
+    "quarterstaff": { "nameGenerator": "/items/active/weapons/manufacturers/teklacki/names/spear.config:nameGen" },
     //some FU stuff uses capital Q
-    "Quarterstaff" : { "nameGenerator" : "/items/active/weapons/manufacturers/teklacki/names/spear.config:nameGen" },
-    "shortspear" : { "nameGenerator" : "/items/active/weapons/manufacturers/teklacki/names/spear.config:nameGen" },
-    "shortsword" : { "nameGenerator" : "/items/active/weapons/manufacturers/teklacki/names/shortsword.config:nameGen" },
-    "spear" : { "nameGenerator" : "/items/active/weapons/manufacturers/teklacki/names/spear.config:nameGen" },
+    "Quarterstaff": { "nameGenerator": "/items/active/weapons/manufacturers/teklacki/names/spear.config:nameGen" },
+    "shortspear": { "nameGenerator": "/items/active/weapons/manufacturers/teklacki/names/spear.config:nameGen" },
+    "shortsword": { "nameGenerator": "/items/active/weapons/manufacturers/teklacki/names/shortsword.config:nameGen" },
+    "spear": { "nameGenerator": "/items/active/weapons/manufacturers/teklacki/names/spear.config:nameGen" },
     
-    "assaultRifle" : {
-      "nameGenerator" : "/items/active/weapons/manufacturers/teklacki/names/assaultrifle.config:nameGen",
+    "assaultRifle": {
+      "nameGenerator": "/items/active/weapons/manufacturers/teklacki/names/assaultrifle.config:nameGen",
       
-      "animationParts" : {
-          "middle" : { "path" : "/items/active/weapons/manufacturers/teklacki/assaultrifle_middle/<variant>.png", "variants" : 8, "paletteSwap" : true },
-          "barrel" : { "path" : "/items/active/weapons/manufacturers/teklacki/assaultrifle_barrel/<variant>.png", "variants" : 6, "paletteSwap" : true }
+      "animationParts": {
+          "middle": { "path": "/items/active/weapons/manufacturers/teklacki/assaultrifle_middle/<variant>.png", "variants": 8, "paletteSwap": true },
+          "barrel": { "path": "/items/active/weapons/manufacturers/teklacki/assaultrifle_barrel/<variant>.png", "variants": 6, "paletteSwap": true }
         },
-      "fireSoundReplacements" : [
-          { "sound" : "/sfx/gun/ar1.ogg",            "replacement" : "/sfx/gun/gristlegun1.ogg" },
-          { "sound" : "/sfx/gun/ar2.ogg",            "replacement" : "/sfx/gun/gristlegun2.ogg" },
-          { "sound" : "/sfx/gun/ar3.ogg",            "replacement" : "/sfx/gun/gristlegun3.ogg" },
-          { "sound" : "/sfx/gun/ar4.ogg",            "replacement" : "/sfx/gun/gristlegun4.ogg" },
-          { "sound" : "/sfx/gun/ar5.ogg",            "replacement" : "/sfx/gun/gristlegun4.ogg" },
-          { "sound" : "/sfx/gun/ar6.ogg",            "replacement" : "/sfx/gun/gristlegun4.ogg" },
-          { "sound" : "/sfx/gun/plasma_ar1.ogg",     "replacement" : "/sfx/gun/gristlegun1.ogg" },
-          { "sound" : "/sfx/gun/plasma_ar2.ogg",     "replacement" : "/sfx/gun/gristlegun2.ogg" },
-          { "sound" : "/sfx/gun/plasma_ar3.ogg",     "replacement" : "/sfx/gun/gristlegun3.ogg" },
-          { "sound" : "/sfx/gun/plasma_pistol3.ogg", "replacement" : "/sfx/gun/gristlegun4.ogg" }
+      "fireSoundReplacements": [
+          { "sound": "/sfx/gun/ar1.ogg",            "replacement": "/sfx/gun/gristlegun1.ogg" },
+          { "sound": "/sfx/gun/ar2.ogg",            "replacement": "/sfx/gun/gristlegun2.ogg" },
+          { "sound": "/sfx/gun/ar3.ogg",            "replacement": "/sfx/gun/gristlegun3.ogg" },
+          { "sound": "/sfx/gun/ar4.ogg",            "replacement": "/sfx/gun/gristlegun4.ogg" },
+          { "sound": "/sfx/gun/ar5.ogg",            "replacement": "/sfx/gun/gristlegun4.ogg" },
+          { "sound": "/sfx/gun/ar6.ogg",            "replacement": "/sfx/gun/gristlegun4.ogg" },
+          { "sound": "/sfx/gun/plasma_ar1.ogg",     "replacement": "/sfx/gun/gristlegun1.ogg" },
+          { "sound": "/sfx/gun/plasma_ar2.ogg",     "replacement": "/sfx/gun/gristlegun2.ogg" },
+          { "sound": "/sfx/gun/plasma_ar3.ogg",     "replacement": "/sfx/gun/gristlegun3.ogg" },
+          { "sound": "/sfx/gun/plasma_pistol3.ogg", "replacement": "/sfx/gun/gristlegun4.ogg" }
       ]
     },
     
-    "broadsword" : {
-      "nameGenerator" : "/items/active/weapons/manufacturers/teklacki/names/broadsword.config:nameGen",
+    "broadsword": {
+      "nameGenerator": "/items/active/weapons/manufacturers/teklacki/names/broadsword.config:nameGen",
       
-      "animationParts" : {
-        "blade" : { "path" : "/items/active/weapons/manufacturers/teklacki/broadsword_blade/<variant>.png", "variants" : 18, "paletteSwap" : true }
+      "animationParts": {
+        "blade": { "path": "/items/active/weapons/manufacturers/teklacki/broadsword_blade/<variant>.png", "variants": 18, "paletteSwap": true }
       }
     },
     
-    "machinePistol" : {
-      "nameGenerator" : "/items/active/weapons/manufacturers/teklacki/names/assaultrifle.config:nameGen",
+    "machinePistol": {
+      "nameGenerator": "/items/active/weapons/manufacturers/teklacki/names/assaultrifle.config:nameGen",
       
-      "animationParts" : {
-          "middle" : { "path" : "/items/active/weapons/manufacturers/teklacki/machinepistol_middle/<variant>.png", "variants" : 8, "paletteSwap" : true },
-          "barrel" : { "path" : "/items/active/weapons/manufacturers/teklacki/machinepistol_barrel/<variant>.png", "variants" : 6, "paletteSwap" : true },
-          "muzzleFlash" : ""
+      "animationParts": {
+          "middle": { "path": "/items/active/weapons/manufacturers/teklacki/machinepistol_middle/<variant>.png", "variants": 8, "paletteSwap": true },
+          "barrel": { "path": "/items/active/weapons/manufacturers/teklacki/machinepistol_barrel/<variant>.png", "variants": 6, "paletteSwap": true },
+          "muzzleFlash": ""
         },
-      "fireSoundReplacements" : [
-          { "sound" : "/sfx/gun/mp1.ogg",        "replacement" : "/sfx/gun/gristlegun1.ogg" },
-          { "sound" : "/sfx/gun/mp2.ogg",        "replacement" : "/sfx/gun/gristlegun2.ogg" },
-          { "sound" : "/sfx/gun/mp3.ogg",        "replacement" : "/sfx/gun/gristlegun3.ogg" },
-          { "sound" : "/sfx/gun/plasma_mp1.ogg", "replacement" : "/sfx/gun/gristlegun1.ogg" },
-          { "sound" : "/sfx/gun/plasma_mp2.ogg", "replacement" : "/sfx/gun/gristlegun2.ogg" },
-          { "sound" : "/sfx/gun/plasma_mp3.ogg", "replacement" : "/sfx/gun/gristlegun3.ogg" }
+      "fireSoundReplacements": [
+          { "sound": "/sfx/gun/mp1.ogg",        "replacement": "/sfx/gun/gristlegun1.ogg" },
+          { "sound": "/sfx/gun/mp2.ogg",        "replacement": "/sfx/gun/gristlegun2.ogg" },
+          { "sound": "/sfx/gun/mp3.ogg",        "replacement": "/sfx/gun/gristlegun3.ogg" },
+          { "sound": "/sfx/gun/plasma_mp1.ogg", "replacement": "/sfx/gun/gristlegun1.ogg" },
+          { "sound": "/sfx/gun/plasma_mp2.ogg", "replacement": "/sfx/gun/gristlegun2.ogg" },
+          { "sound": "/sfx/gun/plasma_mp3.ogg", "replacement": "/sfx/gun/gristlegun3.ogg" }
       ]
     }
   }

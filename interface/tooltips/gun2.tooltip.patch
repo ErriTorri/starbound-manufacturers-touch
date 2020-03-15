@@ -34,10 +34,10 @@
       "type": "label",
       "position": [
         9,
-        93
+        89
       ],
       "hAnchor": "left",
-      "value": "DPS:"
+      "value": "Damage Per Second:"
     }
   },
   {
@@ -47,7 +47,7 @@
       "type": "label",
       "position": [
         148,
-        93
+        89
       ],
       "hAnchor": "right",
       "value": ""
@@ -60,10 +60,10 @@
       "type": "label",
       "position": [
         9,
-        84
+        81
       ],
       "hAnchor": "left",
-      "value": "EPS:"
+      "value": "Energy Per Second:"
     }
   },
   {
@@ -73,7 +73,7 @@
       "type": "label",
       "position": [
         148,
-        84
+        81
       ],
       "hAnchor": "right",
       "value": ""
@@ -86,7 +86,7 @@
       "type": "label",
       "position": [
         9,
-        75
+        72
       ],
       "hAnchor": "left",
       "value": "Damage Per Energy:"
@@ -99,7 +99,7 @@
       "type": "label",
       "position": [
         148,
-        75
+        72
       ],
       "hAnchor": "right",
       "value": ""
@@ -113,18 +113,8 @@
   },
   {
 	"op": "replace",
-	"path": "/critChanceTitleLabel/position/1",
-	"value": 181
-  },
-  {
-	"op": "replace",
 	"path": "/critChanceLabel/position/1",
 	"value": 171
-  },
-  {
-	"op": "replace",
-	"path": "/critBonusTitleLabel/position/1",
-	"value": 161
   },
   {
 	"op": "replace",
@@ -132,14 +122,22 @@
 	"value": 151
   },
   {
-	"op": "replace",
-	"path": "/levelLabel/position/1",
-	"value": 197
+    "op": "replace",
+    "path": "/levelLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        146,
+        197
+      ],
+      "hAnchor": "right",
+      "value": ""
+    }
   },
   {
 	"op": "replace",
-	"path": "/handednessLabel/position/1",
-	"value": 197
+	"path": "/handednessLabel/position",
+	"value": [100, 197]
   },
   {
 	"op": "replace",
@@ -151,70 +149,88 @@
 	"path": "/objectImage/position/1",
 	"value": 164
   },
-  
   {
-	"op": "replace",
-	"path": "/critChanceTitleLabel/position/1",
-	"value": 182
-  },
-  {
-	"op": "replace",
-	"path": "/critChanceLabel/position/1",
-	"value": 172
-  },
-  {
-	"op": "replace",
-	"path": "/critBonusTitleLabel/position/1",
-	"value": 162
-  },
-  {
-	"op": "replace",
-	"path": "/critBonusLabel/position/1",
-	"value": 152
+    "op": "replace",
+    "path": "/critChanceImage/position",
+    "value": [14, 199]
   },
   {
     "op": "replace",
-    "path": "/levelLabel/position/1",
-    "value": 196
+    "path": "/critChanceLabel/position",
+    "value": [10, 190]
   },
   {
     "op": "replace",
-    "path": "/altAbilityTitleLabel/position/1",
-    "value": 39
+    "path": "/critBonusImage/position",
+    "value": [14, 174]
   },
   {
     "op": "replace",
-    "path": "/altAbilityLabel/position/1",
-    "value": 39
+    "path": "/critBonusLabel/position",
+    "value": [10, 164]
   },
   {
     "op": "replace",
-    "path": "/energyPerShotTitleLabel/position/1",
-    "value": 48
+    "path": "/magazineSizeImage/position",
+    "value": [34, 199]
   },
   {
     "op": "replace",
-    "path": "/energyPerShotLabel/position/1",
-    "value": 48
+    "path": "/magazineSizeLabel/position",
+    "value": [30, 190]
   },
   {
     "op": "replace",
-    "path": "/speedTitleLabel/position/1",
-    "value": 57
+    "path": "/reloadTimeImage/position",
+    "value": [34, 174]
   },
   {
     "op": "replace",
-    "path": "/speedLabel/position/1",
-    "value": 57
+    "path": "/reloadTimeLabel/position",
+    "value": [30, 164]
+  },
+  {
+    "op": "remove",
+    "path": "/levelLabelTitle"
   },
   {
     "op": "replace",
-    "path": "/damagePerShotTitleLabel/position/1",
-    "value": 66
+    "path": "/altAbilityTitleLabel/position",
+    "value": [9, 36]
   },
   {
     "op": "replace",
-    "path": "/damagePerShotLabel/position/1",
-    "value": 66
+    "path": "/altAbilityLabel/position",
+    "value": [148, 36]
+  },
+  {
+    "op": "replace",
+    "path": "/energyPerShotTitleLabel/position",
+    "value": [9, 45]
+  },
+  {
+    "op": "replace",
+    "path": "/energyPerShotLabel/position",
+    "value": [148, 45]
+  },
+  {
+    "op": "replace",
+    "path": "/speedTitleLabel/position",
+    "value": [9, 54]
+  },
+  {
+    "op": "replace",
+    "path": "/speedLabel/position",
+    "value": [148, 54]
+  },
+  {
+    "op": "replace",
+    "path": "/damagePerShotTitleLabel/position",
+    "value": [9, 63]
+  },
+  {
+    "op": "replace",
+    "path": "/damagePerShotLabel/position",
+    "value": [148, 63]
   }
 ]

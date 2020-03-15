@@ -225,10 +225,10 @@ function applyManufacturerStats(config, parameters, builderConfig, seed, manufac
 	  
 	    --FrackinUniverse's Crit stats
 	    if config.critBonus then
-	      config.critBonus = applyModifier(config.primaryAbility, config.critBonus, primaryAbility.critBonusMultiplier)
+	      config.critBonus = applyModifier(config, config.critBonus, primaryAbility.critBonusMultiplier)
 	    end
 	    if config.critChance then
-	      config.critChance = applyModifier(config.primaryAbility, config.critChance, primaryAbility.critChanceMultiplier)
+	      config.critChance = applyModifier(config, config.critChance, primaryAbility.critChanceMultiplier)
 	    end
      
 	    --ranged only modifications
@@ -248,6 +248,17 @@ function applyManufacturerStats(config, parameters, builderConfig, seed, manufac
         if config.primaryAbility.inaccuracy then
           config.primaryAbility.inaccuracy = applyModifier(config.primaryAbility, config.primaryAbility.inaccuracy, primaryAbility.inaccuracyMultiplier)
         end
+
+        -- FU Additions
+	
+        if config.magazineSize then
+          config.magazineSize = applyModifier(config, config.magazineSize, primaryAbility.magazineSizeMultiplier)
+        end
+        if config.reloadTime then
+          config.reloadTime = applyModifier(config, config.reloadTime, primaryAbility.reloadTimeMultiplier)
+        end
+
+        -- End of FU
 	    else
 	    --melee only modifications
 	      if primaryAbility.knockbackMultiplier and config.primaryAbility.damageConfig.knockbackRange then

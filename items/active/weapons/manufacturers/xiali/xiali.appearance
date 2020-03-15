@@ -1,27 +1,34 @@
 {
   "defaultMeleePalette"  : "/items/active/weapons/manufacturers/xiali/melee.palettes",
-  "defaultRangedPalette" : "/items/active/weapons/manufacturers/xiali/ranged.palettes",
-  "useElementalMuzzleFlash" : true,
-  "specific" : {
-    "assaultRifle" : {
-	  "animationParts" : {
-        "butt" :   { "path" : "/items/active/weapons/manufacturers/xiali/assaultrifle_butt/<variant>.png", "variants" : 7, "paletteSwap" : true }
+  "defaultRangedPalette": "/items/active/weapons/manufacturers/xiali/ranged.palettes",
+  "useElementalMuzzleFlash": true,
+
+  // after processing weapon, replaces category with different one
+  "categoryMappings": {
+    "broadssword": "mtGreatSaber",
+    "broadsword": "mtSaber"
+  },
+
+  "specific": {
+    "assaultRifle": {
+      "animationParts": {
+        "butt":   { "path": "/items/active/weapons/manufacturers/xiali/assaultrifle_butt/<variant>.png", "variants": 7, "paletteSwap": true }
       }
-	},
-	"broadsword" : {
-	  "animationParts" : {
-	    "blade" : { "path" : "/items/active/weapons/manufacturers/xiali/broadsword_blade/<variant>.png", "variants" : 7, "paletteSwap" : true }
+    },
+    "broadsword": {
+      "animationParts": {
+        "blade": { "path": "/items/active/weapons/manufacturers/xiali/broadsword_blade/<variant>.png", "variants": 7, "paletteSwap": true }
       }
-	},
-	"shortsword" : {
-	  "animationParts" : {
-	    "blade" : { "path" : "/items/active/weapons/manufacturers/xiali/broadsword_blade/<variant>.png", "variants" : 5, "paletteSwap" : true }
+    },
+    "shortsword": {
+      "animationParts": {
+        "blade": { "path": "/items/active/weapons/manufacturers/xiali/shortsword_blade/<variant>.png", "variants": 5, "paletteSwap": true }
       }
-	},
-	"spear" : {
-	  "animationParts" : {
-	    "blade" : { "path" : "/items/active/weapons/manufacturers/xiali/spear_blade/<variant>.png", "variants" : 16, "paletteSwap" : true }
+    },
+    "spear": {
+      "animationParts": {
+        "blade": { "path": "/items/active/weapons/manufacturers/xiali/spear_blade/<variant>.png", "variants": 16, "paletteSwap": true }
       }
-	}
+    }
   }
 }

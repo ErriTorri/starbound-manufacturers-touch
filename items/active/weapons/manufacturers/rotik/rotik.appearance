@@ -1,7 +1,13 @@
 {
-  "defaultMeleePalette"  : "/items/active/weapons/manufacturers/rotik/melee.palettes",
-  "defaultRangedPalette" : "/items/active/weapons/manufacturers/rotik/ranged.palettes",
-  "useElementalMuzzleFlash" : true,
-  "specific" : {
-  }
+  "defaultMeleePalette": "/items/active/weapons/manufacturers/rotik/melee.palettes",
+  "defaultRangedPalette": "/items/active/weapons/manufacturers/rotik/ranged.palettes",
+  "useElementalMuzzleFlash": true,
+
+  // after processing weapon, replaces category with different one
+  "categoryMappings": {
+    "broadsword": "mtClaymore",
+    "hammer": "mtWarhammer"
+  },
+
+  "specific": {}
 }

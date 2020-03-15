@@ -1,13 +1,30 @@
 [
+  // General
+  { "op": "add", "path": "/labels/mtGreatsword", "value": "Greatsword" },
+  { "op": "add", "path": "/labels/mtWarhammer", "value": "Warhammer" },
+
+  // Callox
+  { "op": "add", "path": "/labels/mtHuntingRifle", "value": "Hunting Rifle" },
+
   // Graxus
   { "op": "add", "path": "/labels/mtBoomRifle", "value": "Boom Rifle" },
 
   // Manaticon
-  { "op": "add", "path": "/labels/mtHeavyBlaster", "value": "Heavy Blaster" },
-  { "op": "add", "path": "/labels/mtLightBlaster", "value": "Light Blaster" },
+  { "op": "add", "path": "/labels/mtHeavyBlaster",     "value": "Heavy Blaster" },
+  { "op": "add", "path": "/labels/mtLightBlaster",     "value": "Light Blaster" },
+  { "op": "add", "path": "/labels/mtLightAutoBlaster", "value": "Light Auto Blaster" },
+  { "op": "add", "path": "/labels/mtScatterBlaster",   "value": "Scatter Blaster" },
+  { "op": "add", "path": "/labels/mtSniperBlaster",    "value": "Sniper Blaster" },
+
+  // Rotik
+  { "op": "add", "path": "/labels/mtClaymore", "value": "Claymore" },
   
   // Shade Co.
   { "op": "add", "path": "/labels/mtStiletto", "value": "Stiletto" },
+
+  // Xia-Li
+  { "op": "add", "path": "/labels/mtGreatSaber", "value": "Great Saber" },
+  { "op": "add", "path": "/labels/mtSaber", "value": "Saber" },
   
   // Teklacki
   { "op": "add", "path": "/labels/mtAssaultNeedler", "value": "Assault Needler" },
