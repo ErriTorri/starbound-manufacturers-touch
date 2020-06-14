@@ -1,19 +1,10 @@
-# (Starbound) Manufacturer's Touch
+# Starbound ~ Manufacturer's Touch
 
 A mod to overhaul weapon creation in Starbound, allowing manufacturers to modify weapon stats, palettes, and names on item creation.
 
 ## Current Version Major Features
 
 Nothing of note right now, see change log
-
-## Notes on File Extensions
-
-Some of these files have strange extensions. I would like to note that these were not my first choices.
-
-.manu files are used instead of .manufacturer files, because Starbound believes that the JSON is malformed if it uses that extension.
-
-.palettes files are used instead of .weaponcolors files, because Starbound will only read the first palette from some of those files,
-rather than reading all of the palettes to choose a proper color.
 
 ## Notes on New Random Weapons
 
