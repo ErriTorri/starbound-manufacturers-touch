@@ -49,8 +49,8 @@
         "variable" : "scaleValueOverTime",
         "value" : {
           "values" : [
-            { "variable" : "fireTime", "minimumMultiplier" : 0.25, "attacksToReachMultiplier" : 8 }, //value, then the minimum (or maximum) that it scale to as a multiplier * itself, then how many attacks to reach that
-            { "variable" : "baseDps",  "minimumMultiplier" : 1.225, "attacksToReachMultiplier" : 8 }
+            { "variable" : "fireTime", "minimumMultiplier" : 0.28, "attacksToReachMultiplier" : 8 }, //value, then the minimum (or maximum) that it scale to as a multiplier * itself, then how many attacks to reach that
+            { "variable" : "baseDps",  "minimumMultiplier" : 1.23, "attacksToReachMultiplier" : 8 }
           ]
         }
       }

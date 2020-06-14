@@ -28,7 +28,7 @@ function build(directory, config, parameters, level, seed)
   -- elemental type and config (for alt ability)
   local elementalType = configParameter("elementalType", "physical")
   replacePatternInData(config, nil, "<elementalType>", elementalType)
-  if config.altAbility and config.altAbility.elementalConfig then
+  if config.altAbility and type(config.altAbility) == "table" and config.altAbility.elementalConfig and type(config.altAbility.elementalConfig[elementalType]) == "table" then
     kitutil.mergeTablesWithoutOverwriting(config.altAbility, config.altAbility.elementalConfig[elementalType])
   end
 

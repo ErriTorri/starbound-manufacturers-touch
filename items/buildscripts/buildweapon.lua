@@ -160,7 +160,7 @@ function build(directory, config, parameters, level, seed)
   if builderConfig.elementalConfig and (elementalType ~= "physical" or builderConfig.treatPhysicalAsElementalType) and (not noElementalTypeUnlessForced or builderConfig.treatPhysicalAsElementalType) then
     util.mergeTable(config, builderConfig.elementalConfig[elementalType])
   end
-  if config.altAbility and config.altAbility.elementalConfig and (elementalType ~= "physical" or builderConfig.treatPhysicalAsElementalType) and (not noElementalTypeUnlessForced or builderConfig.treatPhysicalAsElementalType) then
+  if config.altAbility and type(config.altAbility) == "table" and config.altAbility.elementalConfig and (elementalType ~= "physical" or builderConfig.treatPhysicalAsElementalType) and (not noElementalTypeUnlessForced or builderConfig.treatPhysicalAsElementalType) then
       --otherwise it just uses the default
       if config.altAbility.elementalConfig[elementalType] then
         kitutil.mergeTablesWithoutOverwriting(config.altAbility, config.altAbility.elementalConfig[elementalType])

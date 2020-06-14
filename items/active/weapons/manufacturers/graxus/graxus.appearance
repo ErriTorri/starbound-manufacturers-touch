@@ -8,5 +8,6 @@
   },
   
   "specific": {
+    "shotgun": { "nameGenerator": "/items/active/weapons/manufacturers/graxus/names/shotgun.config:nameGen" }
   }
 }

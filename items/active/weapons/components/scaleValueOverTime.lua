@@ -18,9 +18,13 @@ function init()
 	local prev, name, isValid = kitutil.getSubTableParent(self.primaryAbility, v.variable)
 	
     if isValid then
-	  local finalMultiplier = v.minimumMultiplier or v.maximumMultiplier or v.endingMultiplier or 1.0
-      local deltaV = (prev[name] - (prev[name]  * finalMultiplier)) / v.attacksToReachMultiplier * -1
-      table.insert(dValues, { ["name"] = v.variable, ["prev"] = prev, ["baseValue"] = prev[name], ["minMultiplier"] = finalMultiplier, ["deltaV"] = deltaV, ["attacksToReachMultiplier"] = v.attacksToReachMultiplier })
+      local curFireTime = self.primaryAbility.fireTime or 1.0
+      -- for attacks with really slow firetime, we reduce the number of attacks needed to reach the max multiplier
+      local attacksToReachMult = (curFireTime > 0.6) and (v.attacksToReachMultiplier / (curFireTime + 0.4)) or v.attacksToReachMultiplier
+
+	    local finalMultiplier = v.minimumMultiplier or v.maximumMultiplier or v.endingMultiplier or 1.0
+      local deltaV = (prev[name] - (prev[name]  * finalMultiplier)) / attacksToReachMult * -1
+      table.insert(dValues, { ["name"] = v.variable, ["prev"] = prev, ["baseValue"] = prev[name], ["minMultiplier"] = finalMultiplier, ["deltaV"] = deltaV, ["attacksToReachMultiplier"] = attacksToReachMult })
 	end
   end
   consecutiveShots = 0
